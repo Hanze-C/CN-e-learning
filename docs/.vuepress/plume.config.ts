@@ -3,7 +3,7 @@ import navbar from './navbar'
 import collections from './collections'
 
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: '/logo.png',
 
   appearance: true,
 
