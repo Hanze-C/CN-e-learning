@@ -2,7 +2,6 @@
 title: 指南
 createTime: 2025/10/06 22:48:25
 ---
-# <i class="fa-solid fa-book"></i> 指南
 
 ::: tip
 本模块正在建设中，会持续更新！

@@ -1,8 +1,7 @@
 ---
-title: 0-6-2-Disassembly-of-the-OPS-Host-Module
+title: 0.6.3 拆解OPS主机模块
 createTime: 2025/10/25 11:38:59
----
-# 0.6.2 拆解OPS主机模块
+--- 
 
 > [!CAUTION]
 > **建议请专业人员操作，且此类设备通常会有 防拆保修标签，擅自拆除后可能会失去保修！！！**

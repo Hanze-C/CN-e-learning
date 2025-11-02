@@ -1,11 +1,9 @@
 ---
 tags:
   - 高级
-title: Add-Microsoft-Store-for-Windows-LTSC
+title: 为 Windows 长期服务渠道（LTSC）添加微软应用商店以安装必要的系统组件
 createTime: 2025/10/10 10:34:34
 ---
-
-# 为 Windows 长期服务渠道（LTSC）添加微软应用商店以安装必要的系统组件
 
 > [!TIP]
 > 此文档也适用于其它微软应用商店（下文称 Microsoft Store ）被卸载的 Windows 系统

@@ -5,11 +5,11 @@ import { defineCollection, defineCollections } from 'vuepress-theme-plume'
 const Guide = defineCollection({
   type: 'doc',
   dir: 'guide',
-  linkPrefix: '/guide',
+  linkPrefix: '/guide/',
   title: '指南',
   sidebar: [
-    { text: '第零篇', link: 'chapter0', items: 'auto' },
-    { text: '第一篇', link: 'chapter1', items: 'auto' },
+    { text: '第零篇', prefix: 'Chapter0', items: 'auto' },
+    { text: '第二篇', prefix: 'Chapter2', items: 'auto' },
   ],
 });
 

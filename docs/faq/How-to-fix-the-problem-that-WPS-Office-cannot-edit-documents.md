@@ -1,11 +1,9 @@
 ---
 tags:
   - 基础
-title: How-to-fix-the-problem-that-WPS-Office-cannot-edit-documents
+title: 如何解决WPS Office无法编辑文档的问题
 createTime: 2025/10/22 00:29:16
 ---
-
-# 如何解决WPS Office无法编辑文档的问题
 众所周知，从2024年起，新版WPS Office（12.x版）**无法直接编辑文档**，而是需要**登录后**才能正常编辑，这无疑给许多没有开放互联网的学校带来了诸多不便
 
  ![一安装好就直接提示](/images/How-to-fix-the-problem-that-WPS-Office-cannot-edit-documents/1.png)

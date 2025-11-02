@@ -1,11 +1,9 @@
 ---
 tags:
   - 高级
-title: bugcheck-codes
+title: Windows 常见蓝屏报错代码
 createTime: 2025/10/02 12:22:09
 ---
-
-# Windows 常见蓝屏报错代码
 
 ![蓝屏](/images/bugcheck-codes/1.webp)
 

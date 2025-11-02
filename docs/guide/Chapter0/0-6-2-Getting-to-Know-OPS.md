@@ -1,8 +1,7 @@
 ---
-title: 0-6-1-Getting-to-Know-OPS
+title: 0.6.2 认识OPS主机模块
 createTime: 2025/10/25 11:38:59
 ---
-# 0.6.1 认识OPS主机模块
 
 ### 什么是 OPS ？
 >以下文段部分内容源自[百度百科](https://baike.baidu.com/item/OPS/8383483) <br>
