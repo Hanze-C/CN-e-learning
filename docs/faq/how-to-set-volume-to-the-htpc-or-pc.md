@@ -1,6 +1,8 @@
 ---
 tags:
-    - 基础
+  - 基础
+title: how-to-set-volume-to-the-htpc-or-pc
+createTime: 2025/10/17 22:31:00
 ---
 
 # 如何修改计算机和大屏幕的音量设置

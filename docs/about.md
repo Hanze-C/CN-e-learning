@@ -1,3 +1,7 @@
+---
+pageLayout: page
+---
+
 # <i class="fa-solid fa-info-circle"></i> 关于
 
 ![电教委员指南](/images/new_banner.png)

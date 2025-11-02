@@ -1,3 +1,7 @@
+---
+pageLayout: page
+---
+
 <!-- 
     在本文“学校列表”表格部分中的数据来源/构成如下("school_location"、"school_type"、"school_name"默认来自issue)：
         地区："school_location"

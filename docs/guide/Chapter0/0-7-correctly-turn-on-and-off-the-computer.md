@@ -1,7 +1,7 @@
 ---
-order: 5
+title: 0-7-correctly-turn-on-and-off-the-computer
+createTime: 2025/10/22 00:29:16
 ---
-
 # 0.7 正确打开或关闭电脑
 ## 打开电脑
 ### 对于台式电脑

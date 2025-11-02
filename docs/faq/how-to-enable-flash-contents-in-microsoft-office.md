@@ -1,6 +1,8 @@
 ---
 tags:
-    - 进阶
+  - 进阶
+title: how-to-enable-flash-contents-in-microsoft-office
+createTime: 2025/10/07 08:08:30
 ---
 
 # 在Microsoft Office中启用flash内容

@@ -1,6 +1,8 @@
 ---
 tags:
-    - 基础
+  - 基础
+title: how-to-uninstall-applications-on-pc-or-htpc
+createTime: 2025/10/16 17:27:33
 ---
 # 如何为电脑或大屏幕删除应用
 ## 1.打开控制面板中的“卸载程序”页面

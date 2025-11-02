@@ -1,6 +1,8 @@
 ---
 tags:
-    - 基础
+  - 基础
+title: the-soft-keyboard-cannot-type
+createTime: 2025/10/02 12:22:09
 ---
 
 # 电脑软键盘无法输入字符的解决方法

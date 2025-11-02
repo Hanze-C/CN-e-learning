@@ -1,6 +1,8 @@
 ---
 tags:
-    - 进阶
+  - 进阶
+title: How-to-install-touch-driver-on-seewo-gen1to2
+createTime: 2025/10/10 10:49:10
 ---
 
 # 如何为希沃1~2代或者使用了红外触摸框的机型安装触摸驱动

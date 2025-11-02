@@ -1,24 +1,8 @@
-# dependencies
-node_modules/
+**/node_modules
 
-# build
-docs/.vitepress/dist/
-docs/.vitepress/cache/
+docs/.vuepress/.cache
+docs/.vuepress/.temp
+docs/.vuepress/dist
 
-# local env files
-.env.local
-.env.*.local
-.env
-
-# editor directories and files
-.vscode
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# system
 .DS_Store
-Thumbs.db
+*.log

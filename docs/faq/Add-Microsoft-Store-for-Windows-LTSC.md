@@ -1,9 +1,12 @@
 ---
 tags:
-    - 高级
+  - 高级
+title: Add-Microsoft-Store-for-Windows-LTSC
+createTime: 2025/10/10 10:34:34
 ---
 
 # 为 Windows 长期服务渠道（LTSC）添加微软应用商店以安装必要的系统组件
+
 > [!TIP]
 > 此文档也适用于其它微软应用商店（下文称 Microsoft Store ）被卸载的 Windows 系统
 
@@ -26,6 +29,7 @@ tags:
 
 - 对于 Windows 10 LTSC 2019 ：https://github.com/kkkgo/LTSC-Add-MicrosoftStore
 - 对于 Windows 10 LTSC 2021 ：https://github.com/megakarlach/LTSC-Add-MicrosoftStore-2021
+
 > [!TIP]
 > 如果您不清楚您的 Windows 10 LTSC 版本，请先尝试 2021，如果 2021 的脚本无法部署 ，请尝试 2019 版本的脚本
 

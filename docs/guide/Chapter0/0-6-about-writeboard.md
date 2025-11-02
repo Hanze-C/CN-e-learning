@@ -1,7 +1,7 @@
 ---
-order: 2
+title: 0-6-about-writeboard
+createTime: 2025/10/22 00:29:16
 ---
-
 # 0.6 关于电子白板
 
 ### 认识电子白板

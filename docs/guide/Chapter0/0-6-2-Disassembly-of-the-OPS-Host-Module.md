@@ -1,23 +1,26 @@
 ---
-order: 4
+title: 0-6-2-Disassembly-of-the-OPS-Host-Module
+createTime: 2025/10/25 11:38:59
 ---
-
 # 0.6.2 拆解OPS主机模块
->[!CAUTION]
- > ⚠注意：**建议请专业人员操作，且此类设备通常会有 防拆保修标签，擅自拆除后可能会失去保修！！！**<br>
- > 除非你知道你在干什么，否则**造成设备损坏等后果请自行负责!!!**
 
+> [!CAUTION]
+> **建议请专业人员操作，且此类设备通常会有 防拆保修标签，擅自拆除后可能会失去保修！！！**
+>
+> 除非你知道你在干什么，否则**造成设备损坏等后果请自行负责!!!**
+> 
 > 如果您还不了解什么是 OPS , 建议先了解此文章内容 [认识OPS主机](https://cnel.smart-teach.cn/faq/Getting-to-Know-OPS)  [关于电子白板](https://cnel.smart-teach.cn/faq/writeboard)
-<br>
+
 
 - OPS主机是整个一体机必不可少的一个部件，简而言之就是一台集成度高的迷你电脑主机，通常OPS主机的安装位置于**一体机机身的左侧** (如图)<br>
 ![OPS](/images/Disassembly-of-the-OPS-Host-Module/1.jpg)
 
 ![OPS](/images/Disassembly-of-the-OPS-Host-Module/2.jpg)
-<br>
+
 
 > [!NOTE]
-> （注：希沃的OPS主机在**一体机身的右边**（如图））<br>
+> （注：希沃的OPS主机在**一体机身的右边**（如图）
+>
 > ![OPS_seewo](/images/Disassembly-of-the-OPS-Host-Module/seewo_OPS_1.jpg)
 >
 > ![OPS_seewo_P1](/images/Disassembly-of-the-OPS-Host-Module/seewo_OPS_3.jpg)
@@ -27,11 +30,9 @@ order: 4
 > ![OPS_seewo_P2](/images/Disassembly-of-the-OPS-Host-Module/seewo_OPS_2.jpg)
 > 
 > 一些旧机型(例如s65ea)在船型开关上方和天线下方并非是快拆按钮，而是两个十字螺丝，但是可以拿手拧松，拧松了就可以拔下来。
-> 
 
-<br>
+一般大部分情况下需要将**整块黑板拆下来才能方便拆除**OPS主机
 
-一般大部分情况下需要将**整块黑板拆下来才能方便拆除**OPS主机<br>
 ~~除非你的手很长且能摸得到~~
 
 > 准备工具：
@@ -47,17 +48,16 @@ order: 4
 > 此文段教程也适用于市面上大部分常见的OPS主机，如 鸿合HiteVision 等，但**可能会有所差异，请仔细观察并以实际情况为准！** <br>
 
 > [!WARNING]
-> 注意⚠：希沃魔改了常规OPS主机规格，故所以此文段教程不适用于 希沃seewo
+> 希沃魔改了常规OPS主机规格，故所以此文段教程不适用于 希沃seewo
 
 > [!NOTE]
-> ⚠注意：图片仅供参考，可能会有所差异，请仔细观察并以实际情况为准
-<br>
+> 图片仅供参考，可能会有所差异，请仔细观察并以实际情况为准
+
 - 首先，将设备彻底关机，然后断电，移除连接在OPS主机模块上的所有线缆<br>
 
-- 按照文章上面的图片所示，找到OPS主机模块位置后，使用 螺丝刀 将固定两侧的螺丝拆除（螺丝接口一般为 十 字状）（位置如图所示），拆除螺丝后按照图中示意方向取出OPS主机<br>
+- 按照文章上面的图片所示，找到OPS主机模块位置后，使用 螺丝刀 将固定两侧的螺丝拆除（螺丝接口一般为 十 字状）（位置如图所示），拆除螺丝后按照图中示意方向取出OPS主机
 
 ![OPS](/images/Disassembly-of-the-OPS-Host-Module/3.png)
-<br>
 
 - 取出后OPS主机模块后，先拆除 无线天线，按照图中所示逆时针旋转取出（如果没有请忽略并查看下一步）<br>
 
@@ -86,7 +86,7 @@ order: 4
 - 移除侧盖后，即可看到主板，CPU散热器，内存等配件，此时你可以进行清理灰尘，更换配件等操作<br>
 
 > [!NOTE]
-> ⚠注意：清灰时请注意控制力度及其他外原因素
+> 清灰时请注意控制力度及其他外原因素
 
 ![OPS](/images/Disassembly-of-the-OPS-Host-Module/11.jpg)
 <br>

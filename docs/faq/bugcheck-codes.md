@@ -1,6 +1,8 @@
 ---
 tags:
-    - 高级
+  - 高级
+title: bugcheck-codes
+createTime: 2025/10/02 12:22:09
 ---
 
 # Windows 常见蓝屏报错代码

@@ -1,6 +1,8 @@
 ---
 tags:
-    - 进阶
+  - 进阶
+title: How-to-fix-MS_Office_Startup
+createTime: 2025/10/06 22:59:38
 ---
 
 # 如何修复Microsoft Office
