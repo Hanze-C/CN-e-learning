@@ -1,14 +1,14 @@
 ---
 tags:
   - 进阶
-title: 在Microsoft Office中启用flash内容
+title: 在 Microsoft Office 中启用 Flash 内容
 createTime: 2025/10/07 08:08:30
 ---
 
 > 本文转载自[2-2-3-trimethylpentane](https://forum.smart-teach.cn/u/2-2-3-trimethylpentane)发布在[STCN论坛](https://forum.smart-teach.cn/)上的文章：[【教程】Microsoft Office启用flash内容](https://forum.smart-teach.cn/d/310)，转载已获得[原作者授权](https://github.com/TEHS-TECH/CN-e-learning/issues/15#issue-3484354303)。以下是原文的转载授权信息：
 >> 本文中的注册表文件、教程及部分插图来源于[@AlanCRL](https://forum.smart-teach.cn/u/AlanCRL)大佬，已获得许可使用，十分感谢他🤝。
 原教程地址：https://blog.csdn.net/alan16356/article/details/147173208?fromshare=blogdetail&sharetype=blogdetail&sharerId=147173208&sharerefer=PC&sharesource=alan16356&sharefrom=from_link
-
+>
 > 如无特殊说明，下文中的“本人”均指[2-2-3-trimethylpentane](https://forum.smart-teach.cn/u/2-2-3-trimethylpentane)。
 
 ## 一、引言
@@ -21,15 +21,13 @@ createTime: 2025/10/07 08:08:30
 
 ### 方法一、Clean Flash Player（推荐使用）
 
-> 此方法摘自本人之前的帖子：https://forum.smart-teach.cn/d/307
+> 此方法摘自本人[之前的帖子](https://forum.smart-teach.cn/d/307)
 
 #### 下载地址
 建议优先选择GitLab镜像源以规避网络问题：
-- **GitLab（推荐）**  
-  https://gitlab.com/cleanflash/installer/-/releases/34.0.0.325  
+- [**GitLab（推荐）**](https://gitlab.com/cleanflash/installer/-/releases/34.0.0.325)
   ![GitLab下载界面](/images/how-to-enable-flash-contents-in-microsoft-office/1.png)
-- **GitHub（备用）**  
-  https://github.com/TCOTC/CleanFlash_Installer/releases  
+- [**GitHub（备用）**](https://github.com/TCOTC/CleanFlash_Installer/releases)
   ![GitHub下载界面](/images/how-to-enable-flash-contents-in-microsoft-office/2.png)
 
 #### 安装教程
@@ -54,8 +52,6 @@ createTime: 2025/10/07 08:08:30
    ![安装过程界面](/images/how-to-enable-flash-contents-in-microsoft-office/12.png)  
    ![安装完成界面](/images/how-to-enable-flash-contents-in-microsoft-office/13.png)
 
-
-
 ### 方法二、Flash官网（中国版）
 
 **请先看完下方图例，再下载！！！**
@@ -65,8 +61,6 @@ https://www.flash.cn/download-wins
 ![7](/images/how-to-enable-flash-contents-in-microsoft-office/7.png)
 
 ![8](/images/how-to-enable-flash-contents-in-microsoft-office/8.png)
-
----
 
 ## 三、导入注册表
 

@@ -30,9 +30,8 @@ createTime: 2025/10/02 12:22:09
 
 1. 任务栏右侧，右键单击（或触屏电脑：长按）“中”（若当前为英文模式则为“英”），点击“设置”。
 2. 选择“常规“。
-![选择“常规”选项](/images/the-soft-keyboard-cannot-type/3.png)
 
+   ![选择“常规”选项](/images/the-soft-keyboard-cannot-type/3.png)
 3. 下滑找到“兼容性”，打开“使用以前版本的微软拼音输入法”。![选择“兼容性”选项](/images/the-soft-keyboard-cannot-type/4.png)
-
 4. 正常输入字符。
 
