@@ -5,7 +5,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
-  title: 'CN-e-learning',
+  title: '电教委指南',
   description: '',
 
   head: [
@@ -17,12 +17,14 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    // hostname: 'https://your_site_url',
+    hostname: 'https://cnel.smart-teach.cn/',
 
     /* 文档仓库配置，用于 editLink */
     docsRepo: 'https://github.com/CN-E-Learning/CN-e-learning',
     docsDir: 'docs',
     docsBranch: 'v2',
+
+    llmstxt: true,
 
     /* 页内信息 */
     // editLink: true,
