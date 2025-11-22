@@ -1,0 +1,74 @@
+# 电教委指南This file contains links to all documentation sections.
+
+## Table of Contents
+
+### 常见问题
+
+- [为 Windows 长期服务渠道（LTSC）添加微软应用商店以安装必要的系统组件](/faq/Add-Microsoft-Store-for-Windows-LTSC.md)
+- [Windows 常见蓝屏报错代码](/faq/bugcheck-codes.md)
+- [常见品牌 教学一体机/交互白板 触摸校准/触摸驱动 汇总](/faq/Common-Touch-Driver-Summaries-for-All-in-One-Teaching-Displays.md)
+- [在 Microsoft Office 中启用 Flash 内容](/faq/how-to-enable-flash-contents-in-microsoft-office.md)
+- [如何修复 Microsoft Office](/faq/How-to-fix-MS_Office_Startup.md)
+- [如何解决 WPS Office 无法编辑文档的问题](/faq/How-to-fix-the-problem-that-WPS-Office-cannot-edit-documents.md)
+- [如何为希沃1~2代或者使用了红外触摸框的机型安装触摸驱动](/faq/How-to-install-touch-driver-on-seewo-gen1to2.md)
+- [如何修改计算机和大屏幕的音量设置](/faq/how-to-set-volume-to-the-htpc-or-pc.md)
+- [如何为电脑或大屏幕删除应用](/faq/how-to-uninstall-applications-on-pc-or-htpc.md)
+- [善用任务管理器](/faq/task-manager.md)
+- [电脑软键盘无法输入字符的解决方法](/faq/the-soft-keyboard-cannot-type.md)
+
+### 指南
+
+- [0.0 章节总述](/guide/Chapter0/0.0.chapte-summary.md)
+- [0.1 在开始之前](/guide/Chapter0/0.1.before-starting.md)
+- [0.6.1 关于电子白板](/guide/Chapter0/0.6.1.about-writeboard.md)
+- [0.6.2 认识OPS主机模块](/guide/Chapter0/0.6.2.Getting-to-Know-OPS.md)
+- [0.6.3 拆解OPS主机模块](/guide/Chapter0/0.6.3.Disassembly-of-the-OPS-Host-Module.md)
+- [0.7 正确打开或关闭电脑](/guide/Chapter0/0.7.correctly-turn-on-and-off-the-computer.md)
+- [2.4 系统清理与磁盘空间维护](/guide/Chapter2/2-4-Cleanup-System_Disk.md)
+
+### Others
+
+- [关于](/about.md)
+- [指南](/guide/index.md)
+- [多校联盟](/school/index.md)
+- [东莞中学南城学校](/school/list/东莞中学南城学校.md): 东莞中学南城学校的大屏信息
+- [东莞市海逸外国语学校（中学部）](/school/list/东莞市海逸外国语学校（中学部）.md): 东莞市海逸外国语学校（中学部）的大屏信息
+- [中国人民大学附属中学丰台学校](/school/list/中国人民大学附属中学丰台学校.md)
+- [佛山市第一中学](/school/list/佛山市第一中学.md)
+- [前郭尔罗斯蒙古族自治县第三中学](/school/list/前郭尔罗斯蒙古族自治县第三中学.md): 前郭尔罗斯蒙古族自治县第三中学的班级大屏信息
+- [前郭尔罗斯蒙古族自治县第二高级中学](/school/list/前郭尔罗斯蒙古族自治县第二高级中学.md): 前郭尔罗斯蒙古族自治县第二高级中学的班级大屏信息
+- [北京市海淀外国语实验学校（京北校区）](/school/list/北京市海淀外国语实验学校（京北校区）.md)
+- [北京市海淀外国语实验学校（海淀校区）](/school/list/北京市海淀外国语实验学校（海淀校区）.md)
+- [北京探月学校](/school/list/北京探月学校.md): 北京探月学校的班级大屏信息
+- [华东师范大学松江实验高级中学](/school/list/华东师范大学松江实验高级中学.md)
+- [城固县朝阳初级中学](/school/list/城固县朝阳初级中学.md): 城固县朝阳初级中学的班级大屏信息
+- [天津市实验中学](/school/list/天津市实验中学.md): 天津市实验中学的班级大屏信息
+- [天津市红星职业中等专业学校](/school/list/天津市红星职业中等专业学校.md)
+- [天津师范大学附属小学](/school/list/天津师范大学附属小学.md): 天津师范大学附属小学的班级大屏信息
+- [奎屯市第一中学](/school/list/奎屯市第一中学.md)
+- [宣威市第一中学](/school/list/宣威市第一中学.md): 宣威市第一中学的班级大屏信息
+- [山东师范大学附属中学](/school/list/山东师范大学附属中学.md): 山东师范大学附属中学的班级大屏信息
+- [山东省莱州市第一中学](/school/list/山东省莱州市第一中学.md)
+- [广州市第一一三中学（东方校区）](/school/list/广州市第一一三中学（东方校区）.md): 广州市第一一三中学（东方校区）的班级大屏信息
+- [张北县第一中学](/school/list/张北县第一中学.md): 张北县第一中学的班级大屏信息
+- [惠州市实验中学](/school/list/惠州市实验中学.md)
+- [惠州市实验中学北校区](/school/list/惠州市实验中学北校区.md)
+- [成都航天中学](/school/list/成都航天中学.md): 成都航天中学的班级大屏信息
+- [揭阳华侨高级中学](/school/list/揭阳华侨高级中学.md)
+- [来宾市实验小学](/school/list/来宾市实验小学.md)
+- [柳州铁一中学（初中部）](/school/list/柳州铁一中学（初中部）.md): 柳州铁一中学（初中部）的班级大屏信息
+- [桂林市宝湖中学](/school/list/桂林市宝湖中学.md)
+- [桂林市桂林中学临桂校区](/school/list/桂林市桂林中学临桂校区.md)
+- [桂林市桂电中学](/school/list/桂林市桂电中学.md)
+- [永嘉县东方外国语学校](/school/list/永嘉县东方外国语学校.md)
+- [江苏省木渎高级中学](/school/list/江苏省木渎高级中学.md): 江苏省木渎高级中学的班级大屏信息
+- [济南市历城第一中学](/school/list/济南市历城第一中学.md): 济南市历城第一中学的班级大屏信息
+- [浙江省温州中学](/school/list/浙江省温州中学.md)
+- [温州第二高级中学](/school/list/温州市第二高级中学.md)
+- [湖北省仙桃中学](/school/list/湖北省仙桃中学.md): 湖北省仙桃中学的班级大屏信息
+- [烟台开发区实验中学](/school/list/烟台开发区实验中学.md): 烟台开发区实验中学的班级大屏信息
+- [苏州市吴中区莫厘实验小学（原东山中心小学）](/school/list/苏州市吴中区莫厘实验小学（原东山中心小学）.md): 苏州市吴中区莫厘实验小学（原东山中心小学）的班级大屏信息
+- [郑州市第四十七高级中学](/school/list/郑州市第四十七高级中学.md)
+- [金华市外国语学校](/school/list/金华市外国语学校.md)
+- [金华市第四中学](/school/list/金华市第四中学.md)
+- [顺德华侨中学](/school/list/顺德华侨中学.md): 顺德华侨中学的班级大屏信息

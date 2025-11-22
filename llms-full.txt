@@ -1,0 +1,3623 @@
+---
+url: /about.md
+---
+# 关于
+
+![电教委员指南](/images/new_banner.png)
+
+> CN-e-learning 是一个专注于帮助电教委员提升工作能力的指南项目。本指南由顶尖电教委编撰，内容涵盖多种计算机知识、错误应对方法等，旨在助力每一位电教委员成为优秀的技术支持角色。
+
+## ✨ 主要特点
+
+* **内容优质**：由经验丰富的电教委精心编写，确保内容的专业性和实用性
+* **覆盖面广**：包含多种计算机知识、设备操作指南及常见错误应对方法
+* **多校联盟**：汇集全国多所学校的电教委经验，提供学校专属信息（筹备中）
+* **易于阅读**：文档结构清晰，语言简洁明了，便于快速查阅和学习
+
+## 🤝 贡献指南
+
+欢迎全国各学校的电教委员贡献经验和知识，具体贡献方式请关注项目后续更新的贡献指南。
+
+## 📄 许可证
+
+本文档根据 [CC-BY-NC-SA 4.0 许可](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1CC)发布。
+
+## 🌟 Stars 历史图表
+
+[![Star History Chart](https://api.star-history.com/svg?repos=TEHS-TECH/CN-e-learning\&type=Date)](https://www.star-history.com/#TEHS-TECH/CN-e-learning\&Date)
+
+**如果这个项目对您有帮助，请[**点亮 Star ⭐**](https://github.com/Jursin/CN-e-learning)！**
+
+---
+
+---
+url: /faq/Add-Microsoft-Store-for-Windows-LTSC.md
+---
+# 为 Windows 长期服务渠道（LTSC）添加微软应用商店以安装必要的系统组件
+> \[!TIP]
+> 此文档也适用于其它微软应用商店（下文称 Microsoft Store ）被卸载的 Windows 系统
+
+先简要介绍一下，Windows LTSC（Long-Term Servicing Channel ，长期服务渠道）是微软针对特定用户群体推出的Windows操作系统版本，专注于提供`长期稳定性`和`最少的功能更新`。这样的系统移除了大量消费者功能和预装应用，无频繁的功能更新推送，无广告软件和促销内容。这种精简设计使得系统`资源占用更低`，特别适合老旧硬件和低配设备。
+
+但也因此，使用 LTSC 系统的一体机会可能遇到以下情况：
+
+* 缺少日常教学中必备的系统组件，如照片查看器、媒体播放器之类的
+* 上述原因导致的各种如“使用画图工具查看图片”“为了放视频专门下了个视频平台客户端导致一体机卡顿”等问题的
+* 想通过 Microsoft Store 获取必要的系统组件但是找不到 Store 的
+* 知道可以通过某种神奇的渠道得到必要的系统组件，如照片查看器、媒体播放器等以解决这些问题，但系统连应用安装程序都没有的
+
+## 检查你的一体机系统是否为 LTSC
+
+* 打开“设置”应用
+* 点击“系统”
+* 在“关于”页面中，查看“版本”信息
+* 如果版本中包含“LTSC”，则说明你的系统为 LTSC 版本
+
+## 推荐的解决方法
+
+推荐 GitHub 上的项目，这些开发者们已经将必要组件打包，还附带了一键执行脚本，能基本实现傻瓜式操作
+
+* [Windows 10 LTSC 2019](https://github.com/kkkgo/LTSC-Add-MicrosoftStore)
+* [Windows 10 LTSC 2021](https://github.com/megakarlach/LTSC-Add-MicrosoftStore-2021)
+
+> \[!TIP]
+> 如果您不清楚您的 Windows 10 LTSC 版本，请先尝试 2021，如果 2021 的脚本无法部署 ，请尝试 2019 版本的脚本
+
+* [Windows 11 LTSC 2024](https://github.com/minihub/LTSC-Add-MicrosoftStore)
+
+## 操作流程
+
+两个针对 Windows 10 LTSC 的项目可以直接点击 Readme 中的超链接下载，下载后解压到一个新建文件夹，右键以管理员身份运行脚本。下图将指出你该点击哪里下载已打包的文件：
+
+![2019](/images/Add-Microsoft-Store-for-Windows-LTSC/1.png)
+
+![2021](/images/Add-Microsoft-Store-for-Windows-LTSC/2.png)
+
+针对 Windows 11 LTSC 2024 的项目，需要点击发布的版本，在版本页找到相应的文件，下载后解压到一个新建文件夹，右键以管理员身份运行脚本。下图将指出下载前具体操作流程：
+
+![Step 1](/images/Add-Microsoft-Store-for-Windows-LTSC/3.png)
+
+![Step 2](/images/Add-Microsoft-Store-for-Windows-LTSC/4.png)
+
+脚本中如有提示已存在更高版本的报错，多数情况下不必理会，在脚本执行完毕后，就可以去开始菜单检查是否新增了 Microsoft Store 应用。如果新增了，进入 Store 并登录微软账户，应该就可以正常使用 Store 查找并安装必要的系统组件了。
+
+---
+
+---
+url: /faq/bugcheck-codes.md
+---
+# Windows 常见蓝屏报错代码
+![蓝屏](/images/bugcheck-codes/1.webp)
+
+下表中列出了Windows常见的蓝屏错误代码（BugcheckCode），您可以使用`Ctrl + F`来检索代码。
+
+此表格来源于[完美代码](https://www.perfcode.com/windows/bsod/bugcheck-codes)，在此表示感谢！
+
+| 代码       | 名称                                                     | 描述                                                           |
+| ---------- | -------------------------------------------------------- | ------------------------------------------------------------  |
+| 0x00000001 | APC\_INDEX\_MISMATCH                                       | 异步过程调用 (APC) 状态索引不匹配                               |
+| 0x00000002 | DEVICE\_QUEUE\_NOT\_BUSY                                    | 设备队列不忙                                                   |
+| 0x00000003 | INVALID\_AFFINITY\_SET                                     | 无效的CPU亲合性设置                                            |
+| 0x00000004 | INVALID\_DATA\_ACCESS\_TRAP                                 | 数据访问陷阱不正确                                             |
+| 0x00000005 | INVALID\_PROCESS\_ATTACH\_ATTEMPT                           | 线程在不允许的情况下附加到进程                                  |
+| 0x00000006 | INVALID\_PROCESS\_DETACH\_ATTEMPT                           | 线程在不允许的情况下脱离进程                                    |
+| 0x00000007 | INVALID\_SOFTWARE\_INTERRUPT                               | 发生了一个无效的软件中断                                        |
+| 0x00000008 | IRQL\_NOT\_DISPATCH\_LEVEL                                  | 代码在一个过低的IRQL级别上运行                                  |
+| 0x00000009 | IRQL\_NOT\_GREATER\_OR\_EQUAL                                | 高IRQL程序尝试访问了分页内存                                    |
+| 0x0000000A | IRQL\_NOT\_LESS\_OR\_EQUAL                                   | 在提高中断请求级别时，访问了无效地址                             |
+| 0x0000000B | NO\_EXCEPTION\_HANDLING\_SUPPORT                            | 系统在处理异常时遇到了问题                                      |
+| 0x0000000C | MAXIMUM\_WAIT\_OBJECTS\_EXCEEDED                            | 线程等待的对象数量超过了系统允许的最大值                         |
+| 0x0000000D | MUTEX\_LEVEL\_NUMBER\_VIOLATION                             | 互斥体层级编号违规                                             |
+| 0x0000000E | NO\_USER\_MODE\_CONTEXT                                     | 在启动系统线程的过程中，如果控制从初始线程过程返回，则会发生此错误 |
+| 0x0000000F | SPIN\_LOCK\_ALREADY\_OWNED                                  | 这表示在已拥有自旋锁的情况下启动了对自旋锁的请求。               |
+| 0x00000010 | SPIN\_LOCK\_NOT\_OWNED                                      | 线程试图释放未持有的自旋锁                                    |
+| 0x00000011 | THREAD\_NOT\_MUTEX\_OWNER                                   | 线程试图释放未持有的互斥锁                                    |
+| 0x00000012 | TRAP\_CAUSE\_UNKNOWN                                       | CPU无法识别异常                                              |
+| 0x00000013 | EMPTY\_THREAD\_REAPER\_LIST                                 | 系统内部线程回收列表为空（目前未使用）                         |
+| 0x00000014 | CREATE\_DELETE\_LOCK\_NOT\_LOCKED                            | 创建-删除锁未锁定                                             |
+| 0x00000015 | LAST\_CHANCE\_CALLED\_FROM\_KMODE                            | 内核模式代码发生了未处理异常                                  |
+| 0x00000016 | CID\_HANDLE\_CREATION                                      | 客户端ID句柄创建失败                                          |
+| 0x00000017 | CID\_HANDLE\_DELETION                                      | 客户端ID句柄删除失败                                          |
+| 0x00000018 | REFERENCE\_BY\_POINTER                                     | 这表示对象的引用计数对于对象的当前状态是非法的。               |
+| 0x00000019 | BAD\_POOL\_HEADER                                          | 这表示池标头已损坏。                                         |
+| 0x0000001A | MEMORY\_MANAGEMENT                                        | 发生了严重的内存管理错误。                                   |
+| 0x0000001B | PFN\_SHARE\_COUNT                                          | 物理页面共享计数不一致（目前未使用）                          |
+| 0x0000001C | PFN\_REFERENCE\_COUNT                                      | 检测到引用计数错误                                           |
+| 0x0000001D | NO\_SPIN\_LOCK\_AVAILABLE                                   | 自旋锁资源耗尽                                               |
+| 0x0000001E | KMODE\_EXCEPTION\_NOT\_HANDLED                              | 内核模式应用程序产生了错误处理程序未捕获到的异常               |
+| 0x0000001F | SHARED\_RESOURCE\_CONV\_ERROR                               | 共享资源转换错误                                            |
+| 0x00000020 | KERNEL\_APC\_PENDING\_DURING\_EXIT                           | 线程退出时，异步过程调用 (APC) 仍处于待处理状态                |
+| 0x00000021 | QUOTA\_UNDERFLOW                                          | 进程资源配额计数器下溢                                        |
+| 0x00000022 | FILE\_SYSTEM                                              | 文件系统错误                                                 |
+| 0x00000023 | FAT\_FILE\_SYSTEM                                          | 这表明 FAT 文件系统出现了问题。                              |
+| 0x00000024 | NTFS\_FILE\_SYSTEM                                         | 这表明 ntfs.sys 出现了问题，该驱动文件允许系统读写 NTFS 驱动器 |
+| 0x00000025 | NPFS\_FILE\_SYSTEM                                         | 这表明 NPFS 文件系统出现了问题                               |
+| 0x00000026 | CDFS\_FILE\_SYSTEM                                         | 这表明 CD 文件系统出现了问题                                 |
+| 0x00000027 | RDR\_FILE\_SYSTEM                                          | 表明 SMB 重定向文件系统中出现了问题                          |
+| 0x00000028 | CORRUPT\_ACCESS\_TOKEN                                     | 访问令牌损坏                                                 |
+| 0x00000029 | SECURITY\_SYSTEM                                          | 安全系统错误                                                 |
+| 0x0000002A | INCONSISTENT\_IRP                                         | 这表示发现 IRP 包含不一致的信息                              |
+| 0x0000002B | PANIC\_STACK\_SWITCH                                       | 这表示内核模式堆栈已溢出                                     |
+| 0x0000002C | PORT\_DRIVER\_INTERNAL                                     | 端口驱动程序内部错误                                        |
+| 0x0000002D | SCSI\_DISK\_DRIVER\_INTERNAL                                | SCSI磁盘驱动程序内部错误                                    |
+| 0x0000002E | DATA\_BUS\_ERROR                                           | 这通常表示检测到系统内存中的奇偶校验错误                     |
+| 0x0000002F | INSTRUCTION\_BUS\_ERROR                                    | 指令总线错误                                                |
+| 0x00000030 | SET\_OF\_INVALID\_CONTEXT                                   | 这表明陷阱帧中的堆栈指针值无效                               |
+| 0x00000031 | PHASE0\_INITIALIZATION\_FAILED                             | 这表明系统初始化失败                                         |
+| 0x00000032 | PHASE1\_INITIALIZATION\_FAILED                             | 这表明系统初始化失败                                         |
+| 0x00000033 | UNEXPECTED\_INITIALIZATION\_CALL                           | 发生了一个意外的初始化调用                                   |
+| 0x00000034 | CACHE\_MANAGER                                            | 这表明文件系统的缓存管理器出现了问题                         |
+| 0x00000035 | NO\_MORE\_IRP\_STACK\_LOCATIONS                              | I/O请求包（IRP）栈耗尽                                       |
+| 0x00000036 | DEVICE\_REFERENCE\_COUNT\_NOT\_ZERO                          | 这表示驱动程序尝试删除仍具有正引用计数的设备对象             |
+| 0x00000037 | FLOPPY\_INTERNAL\_ERROR                                    | 软盘驱动程内部错误                                          |
+| 0x00000038 | SERIAL\_DRIVER\_INTERNAL                                   | 串行驱动程序内部错误                                        |
+| 0x00000039 | SYSTEM\_EXIT\_OWNED\_MUTEX                                  | 这表明工作例程返回时没有释放它所拥有的互斥锁                 |
+| 0x0000003A | SYSTEM\_UNWIND\_PREVIOUS\_USER                              | 这表示在执行从特权代码转换为非特权代码的例程时发生了异常     |
+| 0x0000003B | SYSTEM\_SERVICE\_EXCEPTION                                 | 这表示在执行从非特权代码转换为特权代码的例程时发生了异常     |
+| 0x0000003C | INTERRUPT\_UNWIND\_ATTEMPTED                               | 发生了在中断上下文中的非法堆栈回退尝试                       |
+| 0x0000003D | INTERRUPT\_EXCEPTION\_NOT\_HANDLED                          | 这表明内核中断对象中断管理的异常处理程序无法处理生成的异常   |
+| 0x0000003E | MULTIPROCESSOR\_CONFIGURATION\_NOT\_SUPPORTED               | 这表明系统有多个处理器，但它们彼此之间不对称                 |
+| 0x0000003F | NO\_MORE\_SYSTEM\_PTES                                      | 这是系统执行过多 I/O 操作的结果。 这导致了系统页表条目 (PTE) 碎片化 |
+| 0x00000040 | TARGET\_MDL\_TOO\_SMALL                                     | 这表明驱动程序未正确使用 IoBuildPartialMdl                   |
+| 0x00000041 | MUST\_SUCCEED\_POOL\_EMPTY                                  | 这表示内核模式线程请求了太多必须成功的池                     |
+| 0x00000042 | ATDISK\_DRIVER\_INTERNAL                                   | ATDISK 驱动程序内部错误（现已停用）                        |
+| 0x00000043 | NO\_SUCH\_PARTITION                                        | 系统引导分区丢失或损坏                                        |
+| 0x00000044 | MULTIPLE\_IRP\_COMPLETE\_REQUESTS                           | 这表示驱动程序已试图请求完成一个已完成的 IRP                 |
+| 0x00000045 | INSUFFICIENT\_SYSTEM\_MAP\_REGS                             | 系统映射寄存器不足                                         |
+| 0x00000046 | DEREF\_UNKNOWN\_LOGON\_SESSION                              | 系统访问了无效的登录会话                                    |
+| 0x00000047 | REF\_UNKNOWN\_LOGON\_SESSION                                | 系统引用了无效的登录会话                                     |
+| 0x00000048 | CANCEL\_STATE\_IN\_COMPLETED\_IRP                            | 这表明 I/O 请求数据包 (IRP) 已完成，随后被取消               |
+| 0x00000049 | PAGE\_FAULT\_WITH\_INTERRUPTS\_OFF                           | 中断关闭时发生页错误                                        |
+| 0x0000004A | IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE                           | 这表示当线程的 IRQL 仍高于PASSIVE\_LEVEL时，线程正从系统调用返回到用户模式 |
+| 0x0000004B | STREAMS\_INTERNAL\_ERROR                                   | 数据流处理机制内部错误(现已停用)                                        |
+| 0x0000004C | FATAL\_UNHANDLED\_HARD\_ERROR                               | 致命的未处理硬件错误                                         |
+| 0x0000004D | NO\_PAGES\_AVAILABLE                                       | 这表示没有可用页面来继续操作                                 |
+| 0x0000004E | PFN\_LIST\_CORRUPT                                         | 这表示页框号 (PFN) 列表已损坏                                |
+| 0x0000004F | NDIS\_INTERNAL\_ERROR                                      | 网络驱动接口规范内部错误                                     |
+| 0x00000050 | PAGE\_FAULT\_IN\_NONPAGED\_AREA                              | 这表明引用了无效的系统内存                                   |
+| 0x00000051 | REGISTRY\_ERROR                                           | 这表示发生了严重的注册表错误                                  |
+| 0x00000052 | MAILSLOT\_FILE\_SYSTEM                                     | 邮槽文件系统错误(现已停用)                                    |
+| 0x00000053 | NO\_BOOT\_DEVICE                                           | 系统未找到可引导设备                                          |
+| 0x00000054 | LM\_SERVER\_INTERNAL\_ERROR                                 | LanMan 服务器内部错误                                         |
+| 0x00000055 | DATA\_COHERENCY\_EXCEPTION                                 | 缓存数据一致性异常                                            |
+| 0x00000056 | INSTRUCTION\_COHERENCY\_EXCEPTION                          | 指令一致性异常                                                |
+| 0x00000057 | XNS\_INTERNAL\_ERROR                                       | Xerox网络系统内部错误(现已停用)                                |
+| 0x00000058 | FTDISK\_INTERNAL\_ERROR                                    | 如果系统从镜像分区的错误副本启动，则会出现此问题                |
+| 0x00000059 | PINBALL\_FILE\_SYSTEM                                      | 这表明 Pinball 文件系统出现了问题                             |
+| 0x0000005A | CRITICAL\_SERVICE\_FAILED                                  | 关键服务意外终止                                               |
+| 0x0000005B | SET\_ENV\_VAR\_FAILED                                       | 设置环境变量失败                                               |
+| 0x0000005C | HAL\_INITIALIZATION\_FAILED                                | 这表明 HAL 初始化失败                                         |
+| 0x0000005D | UNSUPPORTED\_PROCESSOR                                    | 这表明计算机正尝试在不受支持的处理器上运行 Windows              |
+| 0x0000005E | OBJECT\_INITIALIZATION\_FAILED                             | 对象初始化失败                                                |
+| 0x0000005F | SECURITY\_INITIALIZATION\_FAILED                           | 安全子系统初始化失败                                           |
+| 0x00000060 | PROCESS\_INITIALIZATION\_FAILED                            | 进程初始化失败                                                 |
+| 0x00000061 | HAL1\_INITIALIZATION\_FAILED                               | 硬件抽象层第一阶段初始化失败                                   |
+| 0x00000062 | OBJECT1\_INITIALIZATION\_FAILED                            | 对象第一阶段初始化失败                                         |
+| 0x00000063 | SECURITY1\_INITIALIZATION\_FAILED                          | 安全第一阶段初始化失败                                         |
+| 0x00000064 | SYMBOLIC\_INITIALIZATION\_FAILED                           | 符号链接初始化失败                                             |
+| 0x00000065 | MEMORY1\_INITIALIZATION\_FAILED                            | 内存第一阶段初始化失败                                          |
+| 0x00000066 | CACHE\_INITIALIZATION\_FAILED                              | 缓存初始化失败                                                |
+| 0x00000067 | CONFIG\_INITIALIZATION\_FAILED                             | 注册表配置失败                                               |
+| 0x00000068 | FILE\_INITIALIZATION\_FAILED                               | 文件初始化失败                                               |
+| 0x00000069 | IO1\_INITIALIZATION\_FAILED                                | I/O 系统的初始化由于某种原因失败                             |
+| 0x0000006A | LPC\_INITIALIZATION\_FAILED                                | 本地过程调用初始化失败                                       |
+| 0x0000006B | PROCESS1\_INITIALIZATION\_FAILED                           | 操作系统的初始化失败                                         |
+| 0x0000006C | REFMON\_INITIALIZATION\_FAILED                             | 引用监视器初始化失败                                         |
+| 0x0000006D | SESSION1\_INITIALIZATION\_FAILED                           | 操作系统的初始化失败                                         |
+| 0x0000006E | SESSION2\_INITIALIZATION\_FAILED                           | 操作系统的初始化失败                                         |
+| 0x0000006F | SESSION3\_INITIALIZATION\_FAILED                           | 操作系统的初始化失败                                         |
+| 0x00000070 | SESSION4\_INITIALIZATION\_FAILED                           | 操作系统的初始化失败                                         |
+| 0x00000071 | SESSION5\_INITIALIZATION\_FAILED                           | 操作系统的初始化失败                                         |
+| 0x00000072 | ASSIGN\_DRIVE\_LETTERS\_FAILED                              | 分配驱动器号失败                                             |
+| 0x00000073 | CONFIG\_LIST\_FAILED                                       | 顶级注册表项之一无法在注册表树中链接                         |
+| 0x00000074 | BAD\_SYSTEM\_CONFIG\_INFO                                   | 注册表中存在错误                                             |
+| 0x00000075 | CANNOT\_WRITE\_CONFIGURATION                               | SYSTEM 注册表配置单元文件无法转换为映射文件                  |
+| 0x00000076 | PROCESS\_HAS\_LOCKED\_PAGES                                 | 驱动程序在 I/O 操作后未能释放锁定的页面，或者它试图解锁已解锁的页面 |
+| 0x00000077 | KERNEL\_STACK\_INPAGE\_ERROR                                | 无法将分页文件中请求的内核数据页读入内存                     |
+| 0x00000078 | PHASE0\_EXCEPTION                                         | HAL 初始化期间遇到意外中断                                   |
+| 0x00000079 | MISMATCHED\_HAL                                           | 硬件抽象层 (HAL) 修订级别或配置与内核或计算机的版本不匹配    |
+| 0x0000007A | KERNEL\_DATA\_INPAGE\_ERROR                                 | 无法将分页文件中请求的内核数据页读入内存                     |
+| 0x0000007B | INACCESSIBLE\_BOOT\_DEVICE                                 | 系统在启动期间失去了对系统分区的访问权限                     |
+| 0x0000007C | BUGCODE\_NDIS\_DRIVER                                      | 操作系统检测到网络驱动程序中错误                             |
+| 0x0000007D | INSTALL\_MORE\_MEMORY                                      | 没有足够的内存来启动操作系统                                 |
+| 0x0000007E | SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED                      | 系统线程产生了错误处理程序未捕获的异常                       |
+| 0x0000007F | UNEXPECTED\_KERNEL\_MODE\_TRAP                              | 表明 Intel CPU 生成了陷阱，而内核未能捕获此陷阱              |
+| 0x00000080 | NMI\_HARDWARE\_FAILURE                                     | 发生了硬件故障                                               |
+| 0x00000081 | SPIN\_LOCK\_INIT\_FAILURE                                   | 自旋锁初始化失败                                             |
+| 0x00000082 | DFS\_FILE\_SYSTEM                                          | 分布式文件系统错误                                           |
+| 0x00000085 | SETUP\_FAILURE                                            | 安装过程中发生了致命错误                                     |
+| 0x0000008B | MBR\_CHECKSUM\_MISMATCH                                    | MBR 校验和中出现了不匹配                                     |
+| 0x0000008E | KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED                        | 内核模式应用程序产生了错误处理程序未捕获到的异常             |
+| 0x0000008F | PP0\_INITIALIZATION\_FAILED                                | 无法初始化即插即用 (PnP) 管理器                              |
+| 0x00000090 | PP1\_INITIALIZATION\_FAILED                                | 无法初始化即插即用 (PnP) 管理器                              |
+| 0x00000092 | UP\_DRIVER\_ON\_MP\_SYSTEM                                   | 多处理器系统上加载了仅单处理器驱动程序                       |
+| 0x00000093 | INVALID\_KERNEL\_HANDLE                                    | 无效或受保护的句柄已传递给 NtClose                           |
+| 0x00000094 | KERNEL\_STACK\_LOCKED\_AT\_EXIT                              | 线程在内核堆栈标记为不可交换时退出                           |
+| 0x00000096 | INVALID\_WORK\_QUEUE\_ITEM                                  | 已删除包含 NULL 指针的队列条目                               |
+| 0x00000097 | BOUND\_IMAGE\_UNSUPPORTED                                  | 驱动程序绑定状态不受支持                                     |
+| 0x00000098 | END\_OF\_NT\_EVALUATION\_PERIOD                              | 系统的试用期已结束                                          |
+| 0x00000099 | INVALID\_REGION\_OR\_SEGMENT                                | 无效的区域或段                                               |
+| 0x0000009A | SYSTEM\_LICENSE\_VIOLATION                                 | 违反了软件许可协议                                           |
+| 0x0000009B | UDFS\_FILE\_SYSTEM                                         | UDF 文件系统中出现了问题                                     |
+| 0x0000009C | MACHINE\_CHECK\_EXCEPTION                                  | 发生了致命的计算机检查异常                                   |
+| 0x0000009E | USER\_MODE\_HEALTH\_MONITOR                                 | 一个或多个关键用户模式组件未能满足运行状况检查               |
+| 0x0000009F | DRIVER\_POWER\_STATE\_FAILURE                               | 驱动程序处于不一致或无效的电源状态                           |
+| 0x000000A0 | INTERNAL\_POWER\_ERROR                                     | 电源策略管理器遇到致命错误                                   |
+| 0x000000A1 | PCI\_BUS\_DRIVER\_INTERNAL                                  | PCI 总线驱动程序检测到其内部结构中存在不一致问题，无法继续运行 |
+| 0x000000A2 | MEMORY\_IMAGE\_CORRUPT                                     | 内存中可执行文件的映像出现损坏                               |
+| 0x000000A3 | ACPI\_DRIVER\_INTERNAL                                     | ACPI 驱动程序检测到内部不一致                                |
+| 0x000000A4 | CNSS\_FILE\_SYSTEM\_FILTER                                  | CNSS 文件系统筛选器中出现了问题                              |
+| 0x000000A5 | ACPI\_BIOS\_ERROR                                          | 计算机的高级配置和电源接口 (ACPI) BIOS 不完全符合 ACPI 规范  |
+| 0x000000A7 | BAD\_EXHANDLE                                             | 内核模式句柄表检测到句柄表条目状态不一致                     |
+| 0x000000AC | HAL\_MEMORY\_ALLOCATION                                    | 硬件抽象层 (HAL) 无法获取足够的内存                          |
+| 0x000000AD | VIDEO\_DRIVER\_DEBUG\_REPORT\_REQUEST                        | 视频端口在运行时代表视频驱动程序创建了一个非致命的小型转储    |
+| 0x000000B1 | BGI\_DETECTED\_VIOLATION                                   | 后台智能检测服务检测到违规                                   |
+| 0x000000B4 | VIDEO\_DRIVER\_INIT\_FAILURE                                | 这表明 Windows 无法进入图形模式                              |
+| 0x000000B8 | ATTEMPTED\_SWITCH\_FROM\_DPC                                | 延迟过程调用 （DPC） 例程尝试了非法操作                      |
+| 0x000000B9 | CHIPSET\_DETECTED\_ERROR                                   | 芯片组检测到错误                                           |
+| 0x000000BA | SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT                          | 这表示卸载会话时，会话驱动程序仍具有映射视图                 |
+| 0x000000BB | NETWORK\_BOOT\_INITIALIZATION\_FAILED                       | 这表示 Windows 未能成功从网络启动                            |
+| 0x000000BC | NETWORK\_BOOT\_DUPLICATE\_ADDRESS                           | 这表示在从网络启动时向该计算机分配了重复的 IP 地址           |
+| 0x000000BD | INVALID\_HIBERNATED\_STATE                                 | 这表示休眠的内存映像与当前硬件配置不匹配                     |
+| 0x000000BE | ATTEMPTED\_WRITE\_TO\_READONLY\_MEMORY                       | 驱动程序试图写入只读内存段                                   |
+| 0x000000BF | MUTEX\_ALREADY\_OWNED                                      | 这表示线程试图获取其已拥有的互斥体的所有权                   |
+| 0x000000C1 | SPECIAL\_POOL\_DETECTED\_MEMORY\_CORRUPTION                  | 这表示驱动程序写入了特殊池的无效部分                         |
+| 0x000000C2 | BAD\_POOL\_CALLER                                          | 这表示当前线程正在发出错误的池请求                           |
+| 0x000000C4 | DRIVER\_VERIFIER\_DETECTED\_VIOLATION                       | 驱动程序验证程序发现的严重错误                               |
+| 0x000000C5 | DRIVER\_CORRUPTED\_EXPOOL                                  | 系统试图访问进程 IRQL 过高的无效内存                         |
+| 0x000000C6 | DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL                       | 这表示驱动程序试图访问已释放的内存池                         |
+| 0x000000C7 | TIMER\_OR\_DPC\_INVALID                                     | 如果在不允许内核计时器或延迟过程调用（DPC）的某个位置找到，则会发出此问题 |
+| 0x000000C8 | IRQL\_UNEXPECTED\_VALUE                                    | IRQL意外值                                                    |
+| 0x000000C9 | DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION                      | 驱动程序验证程序 I/O 验证违规                                |
+| 0x000000CA | PNP\_DETECTED\_FATAL\_ERROR                                 | 这表示即插即用管理器遇到严重错误，可能是由于有问题的即插即用驱动程序造成的 |
+| 0x000000CB | DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS                      | 这表示驱动程序或 I/O 管理器在 I/O 操作后未能释放锁定的页面   |
+| 0x000000CC | PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL                         | 这表示系统引用了先前释放的内存                               |
+| 0x000000CD | PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION                      | 这表示系统访问的内存超出了某个驱动程序池分配的上限           |
+| 0x000000CE | DRIVER\_UNLOADED\_WITHOUT\_CANCELLING\_PENDING\_OPERATIONS    | 这表示驱动程序未能在卸载前取消挂起的操作                     |
+| 0x000000CF | TERMINAL\_SERVER\_DRIVER\_MADE\_INCORRECT\_MEMORY\_REFERENCE   | 这表示驱动程序被错误地移植到终端服务器                       |
+| 0x000000D0 | DRIVER\_CORRUPTED\_MMPOOL                                  | 这表示系统试图访问进程 IRQL 过高的无效内存                   |
+| 0x000000D1 | DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL                            | 这表示内核模式驱动程序在进程 IRQL 过高时试图访问可分页内存   |
+| 0x000000D2 | BUGCODE\_ID\_DRIVER                                        | 这表示 NDIS 驱动程序出现问题                                 |
+| 0x000000D3 | DRIVER\_PORTION\_MUST\_BE\_NONPAGED                          | 这表示系统试图访问进程 IRQL 过高的可分页内存                 |
+| 0x000000D4 | SYSTEM\_SCAN\_AT\_RAISED\_IRQL\_CAUGHT\_IMPROPER\_DRIVER\_UNLOAD | 这表示驱动程序在卸载之前未取消挂起的操作                     |
+| 0x000000D5 | DRIVER\_PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL                  | 这表示驱动程序引用了先前释放的内存                           |
+| 0x000000D6 | DRIVER\_PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION               | 这表示驱动程序访问的内存超出了其池分配的上限                 |
+| 0x000000D7 | DRIVER\_UNMAPPING\_INVALID\_VIEW                            | 这表示驱动程序正在尝试取消映射未映射的地址                   |
+| 0x000000D8 | DRIVER\_USED\_EXCESSIVE\_PTES                               | 这表示没有其他系统页表条目 (PTE)                             |
+| 0x000000D9 | LOCKED\_PAGES\_TRACKER\_CORRUPTION                          | 这表示内部锁定的页面跟踪结构已损坏                           |
+| 0x000000DA | SYSTEM\_PTE\_MISUSE                                        | 这表示页表项 (PTE) 例程的使用方式不正确                      |
+| 0x000000DB | DRIVER\_CORRUPTED\_SYSPTES                                 | 这表示试图在无效的 IRQL 中操作内存，可能是由于系统 PTE 损坏  |
+| 0x000000DC | DRIVER\_INVALID\_STACK\_ACCESS                              | 这表示驱动程序访问了位于堆栈线程的堆栈指针下方的堆栈地址     |
+| 0x000000DE | POOL\_CORRUPTION\_IN\_FILE\_AREA                             | 这表示驱动程序的池内存已损坏，该内存用于存放指向磁盘的页面   |
+| 0x000000DF | IMPERSONATING\_WORKER\_THREAD                              | 这表示工作项在完成之前没有禁用模拟                           |
+| 0x000000E0 | ACPI\_BIOS\_FATAL\_ERROR                                    | 这表示某个计算机组件出现故障                                 |
+| 0x000000E1 | WORKER\_THREAD\_RETURNED\_AT\_BAD\_IRQL                       | 这表示用户有意从内核调试器或键盘启动崩溃转储                 |
+| 0x000000E2 | MANUALLY\_INITIATED\_CRASH                                 | 手动发起的崩溃                                             |
+| 0x000000E3 | RESOURCE\_NOT\_OWNED                                       | 这表示线程试图释放它不拥有的资源                             |
+| 0x000000E4 | WORKER\_INVALID                                           | 这表示不应包含执行工作项的内存中确实包含这样的项，或者当前活动的工作项已排队 |
+| 0x000000E6 | DRIVER\_VERIFIER\_DMA\_VIOLATION                            | 驱动程序验证程序 DMA 验证违规                                |
+| 0x000000E7 | INVALID\_FLOATING\_POINT\_STATE                             | 这表示线程保存的浮点状态无效                                 |
+| 0x000000E8 | INVALID\_CANCEL\_OF\_FILE\_OPEN                              | 这表示向 IoCancelFileOpen 传递了一个无效的文件对象           |
+| 0x000000E9 | ACTIVE\_EX\_WORKER\_THREAD\_TERMINATION                      | 这表示活动的执行工作线程正在终止                             |
+| 0x000000EA | THREAD\_STUCK\_IN\_DEVICE\_DRIVER                            | 这表示设备驱动程序中的线程在无休止地旋转                     |
+| 0x000000EB | DIRTY\_MAPPED\_PAGES\_CONGESTION                            | 这表示没有可用页面来继续操作                                 |
+| 0x000000EC | SESSION\_HAS\_VALID\_SPECIAL\_POOL\_ON\_EXIT                   | 表明在会话驱动程序仍保留内存时发生了会话卸载                 |
+| 0x000000ED | UNMOUNTABLE\_BOOT\_VOLUME                                  | 这表示 I/O 子系统试图装载启动卷，但失败了                    |
+| 0x000000EF | CRITICAL\_PROCESS\_DIED                                    | 关键系统进程已终止                                           |
+| 0x000000F0 | STORAGE\_MINIPORT\_ERROR                                   | 它表示存储微型端口驱动程序无法完成 SRB 请求                  |
+| 0x000000F1 | SCSI\_VERIFIER\_DETECTED\_VIOLATION                         | 驱动程序验证程序 SCSI 验证违规                               |
+| 0x000000F2 | HARDWARE\_INTERRUPT\_STORM                                 | 这表示内核检测到了中断风暴                                   |
+| 0x000000F3 | DISORDERLY\_SHUTDOWN                                      | 这表明 Windows 由于内存不足而无法关闭                        |
+| 0x000000F4 | CRITICAL\_OBJECT\_TERMINATION                              | 这表示对系统操作至关重要的进程或线程意外退出或已终止         |
+| 0x000000F5 | FLTMGR\_FILE\_SYSTEM                                       | 这表示筛选器管理器中发生了不可恢复的失败                     |
+| 0x000000F6 | PCI\_VERIFIER\_DETECTED\_VIOLATION                          | 这表示 BIOS 或 PCI 驱动程序正在验证的其他设备中发生错误      |
+| 0x000000F7 | DRIVER\_OVERRAN\_STACK\_BUFFER                              | 这表示驱动程序已溢出基于堆栈的缓冲区                         |
+| 0x000000F8 | RAMDISK\_BOOT\_INITIALIZATION\_FAILED                       | 这表示在尝试从 RAM 磁盘启动时发生初始化故障                  |
+| 0x000000F9 | DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN           | 这表示驱动程序针对 IRP\_MJ\_CREATE 请求返回了 STATUS\_REPARSE，但没有尾随名称 |
+| 0x000000FA | HTTP\_DRIVER\_CORRUPTED                                    | 这表示 HTTP 内核驱动程序 (Http.sys) 已达到损坏状态且无法恢复 |
+| 0x000000FC | ATTEMPTED\_EXECUTE\_OF\_NOEXECUTE\_MEMORY                    | 这表示试图执行不可执行的内存                                 |
+| 0x000000FD | DIRTY\_NOWRITE\_PAGES\_CONGESTION                           | 这表示没有可用的页面来继续基本的系统操作                     |
+| 0x000000FE | BUGCODE\_USB\_DRIVER                                       | 这表示通用串行总线 (USB) 驱动程序中发生了错误                |
+| 0x000000FF | RESERVE\_QUEUE\_OVERFLOW                                   | 这表示试图将新项目插入保留队列，导致队列溢出                 |
+| 0x00000100 | LOADER\_BLOCK\_MISMATCH                                    | 这表明加载程序块无效，或者它与正在加载的系统不匹配           |
+| 0x00000101 | CLOCK\_WATCHDOG\_TIMEOUT                                   | 在多处理器系统中，辅助处理器上的预期时钟中断未在分配的时间间隔内收到 |
+| 0x00000102 | DPC\_WATCHDOG\_TIMEOUT                                     | 这表示未在分配的时间间隔内执行 DPC 监视器例程                |
+| 0x00000103 | MUP\_FILE\_SYSTEM                                          | 多个 UNC 提供程序 (MUP) 遇到无效或意外的数据                 |
+| 0x00000104 | AGP\_INVALID\_ACCESS                                       | 这表示 GPU 写入了以前未提交的一系列加速图形端口 (AGP) 内存   |
+| 0x00000105 | AGP\_GART\_CORRUPTION                                      | 这表示图形孔径定向表 (GART) 已损坏                           |
+| 0x00000106 | AGP\_ILLEGALLY\_REPROGRAMMED                               | 这表示加速图形端口 (AGP) 硬件已由未经授权的代理重新编程      |
+| 0x00000108 | THIRD\_PARTY\_FILE\_SYSTEM\_FAILURE                          | 这表示第三方文件系统或文件系统过滤器中出现了不可恢复的问题   |
+| 0x00000109 | CRITICAL\_STRUCTURE\_CORRUPTION                            | 这表示内核检测到关键内核代码或数据损坏                       |
+| 0x0000010A | APP\_TAGGING\_INITIALIZATION\_FAILED                        | 应用程序标记初始化失败                                       |
+| 0x0000010C | FSRTL\_EXTRA\_CREATE\_PARAMETER\_VIOLATION                   | 这表示在文件系统运行时库 (FsRtl) 额外创建参数 (ECP) 包中检测到冲突 |
+| 0x0000010D | WDF\_VIOLATION                                            | 这表示内核模式驱动程序框架 (KMDF) 检测到 Windows 在基于框架的驱动程序中发现了错误 |
+| 0x0000010E | VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL                         | 这表示视频内存管理器遇到了无法从中恢复的条件                 |
+| 0x0000010F | RESOURCE\_MANAGER\_EXCEPTION\_NOT\_HANDLED                   | 这表示内核事务管理器检测到内核模式资源管理器在响应直接回调时引发了异常。 资源管理器处于意外且不可恢复的状态 |
+| 0x00000111 | RECURSIVE\_NMI                                            | 不可屏蔽中断处理过程中发生递归                               |
+| 0x00000112 | MSRPC\_STATE\_VIOLATION                                    | 这表示 Msrpc.sys 驱动程序已启动 Bug 检查                     |
+| 0x00000113 | VIDEO\_DXGKRNL\_FATAL\_ERROR                                | 这表明 Microsoft DirectX 图形内核子系统检测到违规            |
+| 0x00000114 | VIDEO\_SHADOW\_DRIVER\_FATAL\_ERROR                          | 这表示影子驱动程序检测到违规                                 |
+| 0x00000115 | AGP\_INTERNAL                                             | 这表示加速图形端口 (AGP) 驱动程序检测到违规                  |
+| 0x00000116 | VIDEO\_TDR\_FAILURE                                        | 重置显示驱动程序并从超时恢复的尝试失败                       |
+| 0x00000117 | VIDEO\_TDR\_TIMEOUT\_DETECTED                               | 这表示显示驱动程序未能及时响应                               |
+| 0x00000119 | VIDEO\_SCHEDULER\_INTERNAL\_ERROR                           | 视频计划程序检测到严重冲突                                   |
+| 0x0000011A | EM\_INITIALIZATION\_FAILURE                                | 执行管理器初始化失败                                        |
+| 0x0000011B | DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK                      | 驱动程序已从持有全局取消锁的取消例程返回                     |
+| 0x0000011C | ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE                  | 尝试写入配置管理器的只读保护存储                             |
+| 0x0000011D | EVENT\_TRACING\_FATAL\_ERROR                                | 事件跟踪子系统遇到意外的致命错误                             |
+| 0x0000011E | TOO\_MANY\_RECURSIVE\_FAULTS                                | 这表示文件系统在资源不足的情况下导致过多的递归错误而无法处理 |
+| 0x0000011F | INVALID\_DRIVER\_HANDLE                                    | 这表示在插入驱动程序对象和引用句柄之间，有人关闭了驱动程序的初始句柄 |
+| 0x00000120 | BITLOCKER\_FATAL\_ERROR                                    | 这表明 BitLocker 驱动器加密遇到无法恢复的问题                |
+| 0x00000121 | DRIVER\_VIOLATION                                         | 驱动程序导致了违规                                           |
+| 0x00000122 | WHEA\_INTERNAL\_ERROR                                      | Windows 硬件错误体系结构 (WHEA) 中发生了内部错误             |
+| 0x00000123 | CRYPTO\_SELF\_TEST\_FAILURE                                 | 这表示加密子系统在启动期间未能通过强制算法自测试             |
+| 0x00000124 | WHEA\_UNCORRECTABLE\_ERROR                                 | 表明发生了致命的硬件错误                                     |
+| 0x00000125 | NMR\_INVALID\_STATE                                        | 这表示 NMR（网络模块注册器）检测到无效状态                   |
+| 0x00000126 | NETIO\_INVALID\_POOL\_CALLER                                | 这表示对 netio 托管内存池（例如 FSB 和 MDL）发出了无效的池请求 |
+| 0x00000127 | PAGE\_NOT\_ZERO                                            | 应该填充零的页面没有填充                                     |
+| 0x00000128 | WORKER\_THREAD\_RETURNED\_WITH\_BAD\_IO\_PRIORITY              | 工作线程返回了错误的 I/O 优先级                              |
+| 0x00000129 | WORKER\_THREAD\_RETURNED\_WITH\_BAD\_PAGING\_IO\_PRIORITY       | 工作线程返回了错误的分页 I/O 优先级                         |
+| 0x0000012A | MUI\_NO\_VALID\_SYSTEM\_LANGUAGE                             | 这表明 Windows 未找到系统默认 UI 语言的任何已安装的许可语言包 |
+| 0x0000012B | FAULTY\_HARDWARE\_CORRUPTED\_PAGE                           | Windows 内存管理器检测到损坏                                 |
+| 0x0000012C | EXFAT\_FILE\_SYSTEM                                        | 扩展文件分配表 (exFAT) 文件系统中出现了问题                  |
+| 0x0000012D | VOLSNAP\_OVERLAPPED\_TABLE\_ACCESS                          | 卷影复制重叠表访问                                           |
+| 0x0000012E | INVALID\_MDL\_RANGE                                        | 无效的 MDL 范围                                             |
+| 0x0000012F | VHD\_BOOT\_INITIALIZATION\_FAILED                           | 这表示尝试从 VHD 启动时出现初始化失败                        |
+| 0x00000130 | DYNAMIC\_ADD\_PROCESSOR\_MISMATCH                           | 添加到系统的新处理器与当前配置不兼容                         |
+| 0x00000131 | INVALID\_EXTENDED\_PROCESSOR\_STATE                         | 这表示保存或还原扩展处理器状态时检测到参数组合无效           |
+| 0x00000132 | RESOURCE\_OWNER\_POINTER\_INVALID                           | 这表示提供了无效的资源所有者指针                             |
+| 0x00000133 | DPC\_WATCHDOG\_VIOLATION                                   | DPC 看门狗超时违规                                         |
+| 0x00000134 | DRIVE\_EXTENDER                                           | 这表示驱动器扩展程序组件经历了严重的内部错误                 |
+| 0x00000135 | REGISTRY\_FILTER\_DRIVER\_EXCEPTION                         | 是由注册表筛选驱动程序中未经处理的异常引起的                 |
+| 0x00000136 | VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE                    | 这表示尝试从 VHD 启动时出现初始化失败                        |
+| 0x00000137 | WIN32K\_HANDLE\_MANAGER                                    | 这表示 win32k/ntuser 句柄管理器检测到致命错误                |
+| 0x00000138 | GPIO\_CONTROLLER\_DRIVER\_ERROR                             | GPIO 类扩展驱动程序遇到致命错误                              |
+| 0x00000139 | KERNEL\_SECURITY\_CHECK\_FAILURE                            | 内核检测到关键数据结构的损坏                                 |
+| 0x0000013A | KERNEL\_MODE\_HEAP\_CORRUPTION                              | 内核模式堆管理器在堆中检测到损坏                             |
+| 0x0000013B | PASSIVE\_INTERRUPT\_ERROR                                  | 内核检测到被动级别中断的问题                                 |
+| 0x0000013C | INVALID\_IO\_BOOST\_STATE                                   | 这表示线程退出时 I/O 提升状态无效                            |
+| 0x0000013D | CRITICAL\_INITIALIZATION\_FAILURE                          | 这表示早期内核初始化失败                                     |
+| 0x00000140 | STORAGE\_DEVICE\_ABNORMALITY\_DETECTED                      | 这表示存储驱动程序堆栈遇到响应性冲突、超出阈值或其他响应失败的速率 |
+| 0x00000143 | PROCESSOR\_DRIVER\_INTERNAL                                | 这表示处理器电源管理 (PPM) 驱动程序遇到致命错误              |
+| 0x00000144 | BUGCODE\_USB3\_DRIVER                                      | USB设备错误                                                  |
+| 0x00000145 | SECURE\_BOOT\_VIOLATION                                    | 这表示由于策略无效或所需操作未完成，无法启动安全启动策略强制执行 |
+| 0x00000147 | ABNORMAL\_RESET\_DETECTED                                  | 这表示 Windows 进行了异常重置                                |
+| 0x00000149 | REFS\_FILE\_SYSTEM                                         | 这表示发生了文件系统错误                                     |
+| 0x0000014A | KERNEL\_WMI\_INTERNAL                                      | 这表示内部内核 WMI 子系统遇到致命错误                        |
+| 0x0000014B | SOC\_SUBSYSTEM\_FAILURE                                    | 这表示芯片上的系统 (SoC) 子系统遇到不可恢复的错误            |
+| 0x0000014C | FATAL\_ABNORMAL\_RESET\_ERROR                               | 这表示发生不可恢复的系统错误或系统已异常重置                 |
+| 0x0000014D | EXCEPTION\_SCOPE\_INVALID                                  | 这表示检测到异常调度的内部不一致                             |
+| 0x0000014E | SOC\_CRITICAL\_DEVICE\_REMOVED                              | 这表示关键 SOC 设备意外被删除或失败                          |
+| 0x0000014F | PDC\_WATCHDOG\_TIMEOUT                                     | 这表示系统组件无法在分配的时间段内做出响应，从而阻止系统退出已连接待机状态 |
+| 0x00000150 | TCPIP\_AOAC\_NIC\_ACTIVE\_REFERENCE\_LEAK                     | 这表示在完全清空发送队列时，应释放 NIC 活动引用              |
+| 0x00000151 | UNSUPPORTED\_INSTRUCTION\_MODE                             | 这表示已尝试使用不受支持的处理器指令模式执行代码             |
+| 0x00000152 | INVALID\_PUSH\_LOCK\_FLAGS                                  | 这表示提供给其中一个推送锁定 API 的标志无效                  |
+| 0x00000153 | KERNEL\_LOCK\_ENTRY\_LEAKED\_ON\_THREAD\_TERMINATION           | 这表示线程在释放其所有 AutoBoost 锁定条目之前已终止          |
+| 0x00000154 | UNEXPECTED\_STORE\_EXCEPTION                               | 内核内存存储组件捕获了意外的异常                             |
+| 0x00000155 | OS\_DATA\_TAMPERING                                        | 操作系统数据篡改                                             |
+| 0x00000157 | KERNEL\_THREAD\_PRIORITY\_FLOOR\_VIOLATION                   | 这表示在特定线程的优先级下尝试了非法操作                     |
+| 0x00000158 | ILLEGAL\_IOMMU\_PAGE\_FAULT                                 | 这表示 IOMMU 为无效 ASID 传递了页面故障数据包                |
+| 0x00000159 | HAL\_ILLEGAL\_IOMMU\_PAGE\_FAULT                             | 这表示 IOMMU 已针对正在释放的 ASID 提供页面故障              |
+| 0x0000015A | SDBUS\_INTERNAL\_ERROR                                     | 这表示 SD 附加设备上发生了不可恢复的硬件故障                 |
+| 0x0000015B | WORKER\_THREAD\_RETURNED\_WITH\_SYSTEM\_PAGE\_PRIORITY\_ACTIVE  | 这表示工作线程的系统页面优先级被调用的工作例程泄露           |
+| 0x00000160 | WIN32K\_ATOMIC\_CHECK\_FAILURE                              | 这表示 Win32k 函数违反了 ATOMICCHECK                         |
+| 0x00000162 | KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE                   | 这表示 AutoBoost 跟踪的锁定是由一个不拥有锁定的线程释放的    |
+| 0x00000163 | WORKER\_THREAD\_TEST\_CONDITION                             | 这表示内核工作线程的测试引发了故障                           |
+| 0x00000164 | WIN32K\_CRITICAL\_FAILURE                                  | 这表示 Win32k 遇到严重故障                                   |
+| 0x0000016C | INVALID\_RUNDOWN\_PROTECTION\_FLAGS                         | 这表示提供给其中一个断开保护 API 的标志无效                  |
+| 0x0000016D | INVALID\_SLOT\_ALLOCATOR\_FLAGS                             | 这表示提供给其中一个插槽分配器 API 的标志无效                |
+| 0x0000016E | ERESOURCE\_INVALID\_RELEASE                                | 这表示提供给 ExReleaseResourceForThreadLite 的目标线程指针无效 |
+| 0x00000170 | CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG                  | 这表示群集断开连接未向前推进                                 |
+| 0x00000171 | CRYPTO\_LIBRARY\_INTERNAL\_ERROR                            | 它指示加密库中出现内部错误                                   |
+| 0x00000173 | COREMSGCALL\_INTERNAL\_ERROR                               | 这指示 CoreMessageCall 检测到不可恢复的错误                  |
+| 0x00000174 | COREMSG\_INTERNAL\_ERROR                                   | 这指示 CoreMessaging 检测到不可恢复的错误                    |
+| 0x00000178 | ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR                         | 这表示 ELAM 驱动程序检测到致命错误                           |
+| 0x0000017B | PROFILER\_CONFIGURATION\_ILLEGAL                           | 性能分析器配置非法                                          |
+| 0x0000017E | MICROCODE\_REVISION\_MISMATCH                              | 这表示多处理器配置中的一个或多个处理器加载的微代码不一致       |
+| 0x00000187 | VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD                       | 图形界面初始化超时且降级显示驱动失败                          |
+| 0x00000189 | BAD\_OBJECT\_HEADER                                        | 这表示 OBJECT\_HEADER 已损坏                                 |
+| 0x0000018B | SECURE\_KERNEL\_ERROR                                      | 这表示安全内核遇到致命错误                                   |
+| 0x0000018C | HYPERGUARD\_VIOLATION                                     | 这表示内核检测到关键内核代码或数据已损坏                      |
+| 0x0000018D | SECURE\_FAULT\_UNHANDLED                                   | 无法处理安全内核引发的安全故障                                |
+| 0x0000018E | KERNEL\_PARTITION\_REFERENCE\_VIOLATION                     | 内核分区引用违规                                              |
+| 0x00000191 | PF\_DETECTED\_CORRUPTION                                   | 检测到页面文件损坏                                            |
+| 0x00000192 | KERNEL\_AUTO\_BOOST\_LOCK\_ACQUISITION\_WITH\_RAISED\_IRQL      | 在已提升的 IRQL 下获取内核自动提升锁                           |
+| 0x00000196 | LOADER\_ROLLBACK\_DETECTED                                 | 这表示 OS 加载程序的版本与操作系统不匹配                       |
+| 0x00000197 | WIN32K\_SECURITY\_FAILURE                                  | 这表示在 win32k 中检测到安全故障                              |
+| 0x00000199 | KERNEL\_STORAGE\_SLOT\_IN\_USE                               | 这表示无法释放存储插槽，因为有一个对象在使用存储插槽            |
+| 0x0000019A | WORKER\_THREAD\_RETURNED\_WHILE\_ATTACHED\_TO\_SILO            | 工作线程在附加到容器时返回                                     |
+| 0x0000019B | TTM\_FATAL\_ERROR                                          | 这表示终端拓扑管理器遇到致命错误                               |
+| 0x0000019C | WIN32K\_POWER\_WATCHDOG\_TIMEOUT                            | 这表明 Win32k 没有及时打开监视器                              |
+| 0x000001A0 | TTM\_WATCHDOG\_TIMEOUT                                     | TTM 看门狗超时                                               |
+| 0x000001A2 | WIN32K\_CALLOUT\_WATCHDOG\_BUGCHECK                         | Win32k 回调看门狗错误检查                                     |
+| 0x000001AA | EXCEPTION\_ON\_INVALID\_STACK                               | 在无效堆栈上发生异常                                          |
+| 0x000001AB | UNWIND\_ON\_INVALID\_STACK                                  | 在无效堆栈上回退                                              |
+| 0x000001C6 | FAST\_ERESOURCE\_PRECONDITION\_VIOLATION                    | 快速ERESOURCE前置条件违规                                     |
+| 0x000001C7 | STORE\_DATA\_STRUCTURE\_CORRUPTION                          | 存储数据结构损坏                                              |
+| 0x000001C8 | MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD                     | 系统在响应用户强制关机时发生内部错误                           |
+| 0x000001CA | SYNTHETIC\_WATCHDOG\_TIMEOUT                               | 虚拟化环境下的看门狗响应超时                                   |
+| 0x000001CB | INVALID\_SILO\_DETACH                                      | 无效的服务器容器分离                                           |
+| 0x000001CD | INVALID\_CALLBACK\_STACK\_ADDRESS                           | 无效的回调堆栈地址                                            |
+| 0x000001CE | INVALID\_KERNEL\_STACK\_ADDRESS                             | 无效的内核堆栈地址                                            |
+| 0x000001CF | HARDWARE\_WATCHDOG\_TIMEOUT                                | 硬件看门狗超时                                                |
+| 0x000001D0 | CPI\_FIRMWARE\_WATCHDOG\_TIMEOUT                            | CPI固件看门狗超时                                             |
+| 0x000001D2 | WORKER\_THREAD\_INVALID\_STATE                              | 工作线程状态无效                                              |
+| 0x000001D3 | WFP\_INVALID\_OPERATION                                    | WFP无效操作                                                  |
+| 0x000001D5 | DRIVER\_PNP\_WATCHDOG                                      | 这表明驱动程序未能在特定时间内完成 PnP 操作                    |
+| 0x000001D6 | WORKER\_THREAD\_RETURNED\_WITH\_NON\_DEFAULT\_WORKLOAD\_CLASS   | 工作线程返回时携带非默认工作负载类别                           |
+| 0x000001D7 | EFS\_FATAL\_ERROR                                          | 加密文件系统遇到致命内部错误                                   |
+| 0x000001D8 | UCMUCSI\_FAILURE                                          | USB-C端口管理器与UCSI固件通信失败                              |
+| 0x000001D9 | HAL\_IOMMU\_INTERNAL\_ERROR                                 | 硬件抽象层IOMMU内部错误                                        |
+| 0x000001DA | HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR                     | 硬件抽象层被阻塞处理器内部错误                                 |
+| 0x000001DB | IPI\_WATCHDOG\_TIMEOUT                                     | 处理器间中断看门狗超时                                        |
+| 0x000001DC | DMA\_COMMON\_BUFFER\_VECTOR\_ERROR                           | 它表示驱动程序滥用了 DMA 矢量通用缓冲区 API                  |
+| 0x000001DD | BUGCODE\_MBBADAPTER\_DRIVER                                | 这表示操作系统遇到了由 MBBCx 管理的网络驱动程序引起的错误    |
+| 0x000001DE | BUGCODE\_WIFIADAPTER\_DRIVER                               | 这表示操作系统遇到由 WiFiCx 管理的网络驱动程序导致的错误       |
+| 0x000001DF | PROCESSOR\_START\_TIMEOUT                                  | 这表示处理器无法在允许的时间内启动                           |
+| 0x000001E4 | VIDEO\_DXGKRNL\_SYSMM\_FATAL\_ERROR                          | 这表明 Microsoft DirectX 图形内核系统内存管理器检测到违规    |
+| 0x000001E9 | ILLEGAL\_ATS\_INITIALIZATION                               | 这表明驱动程序试图在已启用共享虚拟内存 (SVM) 的设备上非法启用地址转换服务 (ATS) |
+| 0x000001EA | SECURE\_PCI\_CONFIG\_SPACE\_ACCESS\_VIOLATION                 | 检测到对PCI设备安全配置空间的非法访问请求                       |
+| 0x000001EB | DAM\_WATCHDOG\_TIMEOUT                                     | 动态内存管理看门狗超时                                         |
+| 0x000001ED | HANDLE\_ERROR\_ON\_CRITICAL\_THREAD                          | 在关键线程上检测到无效或损坏的句柄                              |
+| 0x000001F1 | KASAN\_ENLIGHTENMENT\_VIOLATION                            | 内核地址消毒器在虚拟化环境中检测到内存访问违规                  |
+| 0x000001F2 | KASAN\_ILLEGAL\_ACCESS                                     | 内核地址消毒器检测到非法内存访问                               |
+| 0x00000356 | XBOX\_ERACTRL\_CS\_TIMEOUT                                  | XBOX 控制器芯片选择超时                                      |
+| 0x00000BFE | BC\_BLUETOOTH\_VERIFIER\_FAULT                              | 这表示驱动程序已导致冲突                                     |
+| 0x00000BFF | BC\_BTHMINI\_VERIFIER\_FAULT                                | 这表示蓝牙微型端口可扩展驱动程序验证程序已捕获冲突           |
+| 0x00020001 | HYPERVISOR\_ERROR                                         | 这表示虚拟机监控程序遇到致命错误                             |
+| 0x1000007E | SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED\_M                    | 这表明系统线程产生了错误处理程序未捕获的异常                 |
+| 0x1000007F | UNEXPECTED\_KERNEL\_MODE\_TRAP\_M                            | 这表明 Intel CPU 生成了陷阱，而内核未能捕获此陷阱            |
+| 0x1000008E | KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED\_M                      | 内核模式程序抛出未捕获的异常                                 |
+| 0x100000EA | THREAD\_STUCK\_IN\_DEVICE\_DRIVER\_M                          | 设备驱动中发生线程卡滞                                       |
+| 0x4000008A | THREAD\_TERMINATE\_HELD\_MUTEX                              | 这表明驱动程序在一个线程上获取了一个 Mutex，而该线程在释放 Mutex 之前就已退出 |
+| 0xC0000218 | STATUS\_CANNOT\_LOAD\_REGISTRY\_FILE                         | 这表示无法加载注册表文件                                     |
+| 0xC000021A | WINLOGON\_FATAL\_ERROR                                     | 这意味着 Winlogon 进程意外终止                               |
+| 0xC0000221 | STATUS\_IMAGE\_CHECKSUM\_MISMATCH                           | 驱动程序或系统 DLL 已损坏                                    |
+| 0xDEADDEAD | MANUALLY\_INITIATED\_CRASH1                                | 检测到用户或程序主动触发的系统崩溃转储                        |
+
+---
+
+---
+url: /faq/Common-Touch-Driver-Summaries-for-All-in-One-Teaching-Displays.md
+---
+# 常见品牌 教学一体机/交互白板 触摸校准/触摸驱动 汇总
+> 本文转载自[2-2-3-trimethylpentane](https://forum.smart-teach.cn/u/2-2-3-trimethylpentane)发布在[STCN论坛](https://forum.smart-teach.cn/)上的文章：[常见品牌 教学一体机/交互白板 触摸校准/触摸驱动 汇总](https://forum.smart-teach.cn/d/699)，转载已获得[原作者授权](https://github.com/TEHS-TECH/CN-e-learning/issues/15#issue-3484354303)。
+
+### 下载源
+
+* [**Yearnstudio资源站（推荐）**](https://alist.yearnstudio.cn/%F0%9F%92%BE%E8%BD%AF%E4%BB%B6%20%C2%B7%20Software%E2%80%8E%E2%80%8E%E2%80%8E/Windows%E2%80%8E%E2%80%8E%E2%80%8E/%E7%8E%AF%E5%A2%83/%E5%B8%B8%E8%A7%81%E6%95%99%E5%AD%A6%E4%B8%80%E4%BD%93%E6%9C%BA&%E4%BA%A4%E4%BA%92%E7%99%BD%E6%9D%BF%E9%A9%B1%E5%8A%A8)
+* [**123云盘（需要登录后下载）**](https://www.123912.com/s/ICnzVv-0MCgh)
+
+---
+
+---
+url: /faq/how-to-enable-flash-contents-in-microsoft-office.md
+---
+# 在 Microsoft Office 中启用 Flash 内容
+> 本文转载自[2-2-3-trimethylpentane](https://forum.smart-teach.cn/u/2-2-3-trimethylpentane)发布在[STCN论坛](https://forum.smart-teach.cn/)上的文章：[【教程】Microsoft Office启用flash内容](https://forum.smart-teach.cn/d/310)，转载已获得[原作者授权](https://github.com/TEHS-TECH/CN-e-learning/issues/15#issue-3484354303)。以下是原文的转载授权信息：
+>
+> > 本文中的注册表文件、教程及部分插图来源于[@AlanCRL](https://forum.smart-teach.cn/u/AlanCRL)大佬，已获得许可使用，十分感谢他🤝。
+> > 原教程地址：https://blog.csdn.net/alan16356/article/details/147173208?fromshare=blogdetail\&sharetype=blogdetail\&sharerId=147173208\&sharerefer=PC\&sharesource=alan16356\&sharefrom=from\_link
+>
+> 如无特殊说明，下文中的“本人”均指[2-2-3-trimethylpentane](https://forum.smart-teach.cn/u/2-2-3-trimethylpentane)。
+
+## 一、引言
+
+自2020年12月31日Adobe正式终止对Flash的技术支持以来，这项曾风靡全球的交互技术已逐渐退出历史舞台。然而在教育、企业培训等特定场景中，仍有大量基于Flash开发的课件因历史遗留问题继续服役。并且MSO目前已默认禁用Flash，会导致这类幻灯片课件的flash内容显示为图片或空白。本文将针对这类问题提出一系列解决方案。
+
+### 本教程适用范围：Microsoft Office 2016⁓365
+
+## 二、安装Flash
+
+**请不要重复安装下列两个软件，否则可能会导致未知错误！！！**
+
+### 方法一、Clean Flash Player（推荐使用）
+
+> 此方法摘自本人[之前的帖子](https://forum.smart-teach.cn/d/307)
+
+#### 下载地址
+
+建议优先选择GitLab镜像源以规避网络问题：
+
+* [**GitLab（推荐）**](https://gitlab.com/cleanflash/installer/-/releases/34.0.0.325)
+  ![GitLab下载界面](/images/how-to-enable-flash-contents-in-microsoft-office/1.png)
+* [**GitHub（备用）**](https://github.com/TCOTC/CleanFlash_Installer/releases)
+  ![GitHub下载界面](/images/how-to-enable-flash-contents-in-microsoft-office/2.png)
+
+#### 安装教程
+
+1. **协议确认**\
+   勾选许可协议复选框 → 点击"Agree"\
+   ![协议确认界面](/images/how-to-enable-flash-contents-in-microsoft-office/3.png)
+
+2. **组件选择**\
+   全选三个功能模块 → 点击"Next"\
+   ![组件选择界面](/images/how-to-enable-flash-contents-in-microsoft-office/4.png)
+
+3. **快捷方式**\
+   按需选择 → 点击"Next"\
+   ![快捷方式设置界面](/images/how-to-enable-flash-contents-in-microsoft-office/5.png)
+
+4. **版本选择**\
+   忽略调试版选项 → 直接点击"Next"\
+   ![版本选择界面](/images/how-to-enable-flash-contents-in-microsoft-office/6.png)
+
+5. **完成安装**\
+   点击"Install"执行安装 → 完成后点击"Quit"退出
+   ![安装过程界面](/images/how-to-enable-flash-contents-in-microsoft-office/12.png)\
+   ![安装完成界面](/images/how-to-enable-flash-contents-in-microsoft-office/13.png)
+
+### 方法二、Flash官网（中国版）
+
+**请先看完下方图例，再下载！！！**
+
+打开这个网址：
+https://www.flash.cn/download-wins
+![7](/images/how-to-enable-flash-contents-in-microsoft-office/7.png)
+
+![8](/images/how-to-enable-flash-contents-in-microsoft-office/8.png)
+
+## 三、导入注册表
+
+下载这个压缩包：https://www.123912.com/s/duk9-wkQAd
+
+打开压缩包，**依次**将**三个都**合入注册表。
+
+![9](/images/how-to-enable-flash-contents-in-microsoft-office/9.png)
+
+如果不出意外的话，您的Office打开含flash的幻灯片时就会出现这个提示。
+
+![10](/images/how-to-enable-flash-contents-in-microsoft-office/10.png)
+
+勾上 **“我可以识别此内容。允许播放”** 并点击继续。
+
+![11](/images/how-to-enable-flash-contents-in-microsoft-office/11.png)
+
+很好，这样您的flash已经成功动起来了！
+
+---
+
+---
+url: /faq/How-to-fix-MS_Office_Startup.md
+---
+# 如何修复 Microsoft Office
+> 在一些操作后，Ofiice可能会**无法正常打开**，甚至出现窗口报错，我们可以通过Office自带的修复程序以解决大多数问题
+>
+> 这个方法也适用于常见的很多软件
+
+## 通过 控制面板\程序\程序和功能 修复
+
+* 打开 控制面板
+
+  ![打开控制面板](/images/How-to-fix-MS_Office_Startup/1.png)
+* 点击 卸载程序
+
+  ![点击卸载程序](/images/How-to-fix-MS_Office_Startup/2.png)
+* 在列表中找到已安装的 Microsoft Office ，鼠标右键选择更改
+
+  ![Microsoft Office](/images/How-to-fix-MS_Office_Startup/3.png)
+* 在弹出的窗口中，有2个选项
+
+  ![打开控制面板](/images/How-to-fix-MS_Office_Startup/4.png)
+* 一般情况下，选择 快速修复 能**解决大多数问题**，如果执行 快速修复 后无效，请尝试 联机修复 并保持**良好的网络连接**
+  > 联机修复 会重新下载 Office 并安装
+
+如果以上方法仍然无效，建议尝试彻底卸载 Microsoft Office 并重新安装，或检查该计算机上是否有 恶意软件/组件 等，或者考虑使用其他软件替代
+
+![打开控制面板](/images/How-to-fix-MS_Office_Startup/1.png)
+
+---
+
+---
+url: /faq/How-to-fix-the-problem-that-WPS-Office-cannot-edit-documents.md
+---
+# 如何解决 WPS Office 无法编辑文档的问题
+> 众所周知，从2024年起，新版WPS Office（12.x版）**无法直接编辑文档**，而是需要**登录后**才能正常编辑，这无疑给许多没有开放互联网的学校带来了诸多不便
+>
+> ![一安装好就直接提示](/images/How-to-fix-the-problem-that-WPS-Office-cannot-edit-documents/1.png)
+>
+> 虽然之前可以通过先装12.x版再卸载装11.x版再把12.x版装回来以达到偷渡使用的目的，但此方法**已在**2024年中失效，不过还好WPS留了个口子现在还可以离线编辑
+>
+> > \[!note]
+> > 此方法非安装政府特供版本，而是对于用普通版WPS or 特供版许可证过期了没续而装回普通版的用户而言的方法，毕竟许可证这东西不好搞啊
+
+## 通过“配置工具”进行更改
+
+* 首先，按下任务栏中的“开始”菜单或者按下Windows徽标键，在左边菜单栏找到“配置工具”这个东西
+* 然后，点击“配置工具”，在弹出的界面中选择“高级”
+
+  ![配置工具](/images/How-to-fix-the-problem-that-WPS-Office-cannot-edit-documents/2.png)
+* 接下来，点击“其他选项”，看到“离线特殊兼容”那一行，勾选“兼容离线状态下的未登录使用方式”
+
+  ![其他选项](/images/How-to-fix-the-problem-that-WPS-Office-cannot-edit-documents/3.png)
+* 最后，点右下角的“确定”，再关掉有“高级”的那个窗口，就大功告成了
+
+---
+
+---
+url: /faq/How-to-install-touch-driver-on-seewo-gen1to2.md
+---
+# 如何为希沃1~2代或者使用了红外触摸框的机型安装触摸驱动
+> 在使用白板时可能会出现白板在部分情况下无法识别用户触摸的问题，您可以通过重新安装驱动来尝试解决此问题。
+
+::: tip
+若您的学校或组织的设备使用了冰点还原或者其他类似技术，请您关闭后再进行操作，您应该在取得您组织的管理员同意后进行操作。
+
+文章作者并不为程序和您的设备的稳定性进行担保，您在阅读时已经同意您将会对您所作操作付出任何可能的责任。\
+:::
+
+> 此教程仅适用于Windows xp，7，8，但Windows10 及其以上版本已经附带了驱动程序，您没有必要安装此驱动，仅在系统安装完成后无法使用触摸的情况下安装此驱动。
+>
+> 此教程为了方便编写部分使用了来源于网络的图片，若您认为我们侵犯了您的权益，我们会尽快删除您认为侵犯了您的权力的图片
+
+## 1. 卸载现有驱动
+
+::: tip
+请您在进行卸载操作前准备好鼠标和键盘以应对卸载触摸驱动后无法触摸的空窗期
+:::
+
+若您希望卸载软件，您需要先打开控制面板，若您使用windows7或者windows8，您可以使用图下方法打开开始菜单。
+
+![pic6](/images/How-to-install-touch-driver-on-seewo-gen1to2/6.webp)
+
+打开控制面板后，请您点击"卸载或更改程序" 或者有相同含义的按钮。
+
+![pic7](/images/How-to-install-touch-driver-on-seewo-gen1to2/7.png)
+
+点击后请您查找带有"TouchService"字样的程序，点击卸载。
+
+![pic8](/images/How-to-install-touch-driver-on-seewo-gen1to2/8.png)
+
+在任何情况下请点击"下一步"或者带有相同含义的按钮来删除出现问题的驱动。
+
+## 2.安装来自希沃官网的驱动
+
+访问[希沃驱动下载页面](https://www.seewo.com/support/customer/download?c=1)
+
+![pic1](/images/How-to-install-touch-driver-on-seewo-gen1to2/1.png)
+
+点击TouchService下方的立即下载,下载完成后解压缩您下载到的压缩包。
+
+![pic2](/images/How-to-install-touch-driver-on-seewo-gen1to2/2.png)
+
+打开压缩包里的文件夹。（TouchService\_IR\_USB\_2155\_XPW78\_V1.46\_20120905-02），点击（setup.exe）双击进行安装。
+
+![pic3](/images/How-to-install-touch-driver-on-seewo-gen1to2/3.png)
+
+请在安装时一直点击下一步，等待到文字下方图片中页面出现，点击启动TouchService，并点击完成。
+
+![pic4](/images/How-to-install-touch-driver-on-seewo-gen1to2/4.png)
+
+当下图界面打开时，程序应显示已连接设备或者其他有相同含义的文字，此时您的触摸会绑定到鼠标，请您点击“多点”按钮，或者点击下图红色箭头所指向的相同位置的按钮，来启用多点触控模式。
+
+![pic5](/images/How-to-install-touch-driver-on-seewo-gen1to2/5.png)
+
+---
+
+---
+url: /faq/how-to-set-volume-to-the-htpc-or-pc.md
+---
+# 如何修改计算机和大屏幕的音量设置
+## 1.了解常见的教学计算机音响系统解决方案
+
+常见的解决方案有两种，一是pc集成到了大屏幕内部，计算机使用大屏幕自带的音响，二是计算机连接了单独的音响
+
+### 如何判断你的设备使用了什么方案
+
+当您使用希沃，鸿合等电子白板的时候，您大概使用了第一种方案，相反的，如果您使用了投影仪加电脑的解决方案（例如东方中原），那您大概已经使用了第二种方案。您最好需要知道您使用了什么解决方案，因为您对系统的了解成度直接影响您排除故障的速度
+
+## 2.如何调整大屏幕内置计算机或链接单独音响的计算机的音量设置
+
+您需要找到屏幕右下角的“喇叭按钮”，单击这个按钮，通过调整横向或竖向的滑块来调整声音的大小，这样您就可以调整计算机的声音大小
+
+![pic1](/images/how-to-set-volume-to-the-htpc-or-pc/1.png)
+
+![pic2](/images/how-to-set-volume-to-the-htpc-or-pc/2.png)
+
+如果您执行完这些操作，设备播放音频的声音仍然很小，请尝试进行下一步操作
+
+## 3.如何调整大屏幕的声音设置
+
+所谓大屏幕，在技术上其实可以理解为一台计算机插在了电视上，您可以想象成一个机顶盒插在了电视上，当您调整机顶盒的声音大小的时候，电视声音大小的上限并不会因为您将机顶盒的声音大小拉到最大而将声音调整到最大。因此，在部分情况下，您需要将电视（也就是大屏幕）的声音限制调整到最大，才能将大屏幕的声音调整到最大。因此，基于这个逻辑，请您排查是否有设备的声音被调整到了相对较低的声音大小，或者没有插电的情况
+
+我们将通过图片向您讲解如何调整大屏幕音量的方法
+
+您首先需要找到大屏幕右下角的操作面板（如图示），点击面板中的“小喇叭”按钮，您可以通过判断“喇叭”图示上方或右方的竖线多少来判断这个按钮是音量加还是音量减。
+
+![pic3](/images/how-to-set-volume-to-the-htpc-or-pc/3.png)
+
+当您点击音量加或者音量减按钮时，您有可能会看到在屏幕右下角出现可如图所示的滑块，点击滑块向左或者向右可以调整音量大或小
+
+![pic4](/images/how-to-set-volume-to-the-htpc-or-pc/4.png)
+
+若您的设备播放音频的声音仍然很小，请您尝试做一下上文第二章节的操作
+
+---
+
+---
+url: /faq/how-to-uninstall-applications-on-pc-or-htpc.md
+---
+# 如何为电脑或大屏幕删除应用
+## 1.打开控制面板中的“卸载程序”页面
+
+对于win7系统,点击开始菜单，点击控制面板。
+
+![pic6](/images/How-to-install-touch-driver-on-seewo-gen1to2/6.webp)
+
+对于Windows10及其以上版本，请点击开始菜单，点击“全部”按钮（如果有），点击任意字母（如图示）。
+
+![pic1](/images/how-to-uninstall-applications-on-pc-or-htpc/1.png)
+
+来到下图所示界面，点击“W”按钮（如图示）。
+
+![pic2](/images/how-to-uninstall-applications-on-pc-or-htpc/2.png)
+
+找到“Windows系统”文件夹，点击打开，并再次点击“控制面板”按钮。
+
+![pic3](/images/how-to-uninstall-applications-on-pc-or-htpc/3.png)
+
+不论怎样，当您按照上文操作，并成功完成时，屏幕中央会弹出如下两个可能的界面（有微小差异也很正常）。
+
+![pic4](/images/how-to-uninstall-applications-on-pc-or-htpc/4.png)
+
+![pic5](/images/how-to-uninstall-applications-on-pc-or-htpc/5.png)
+
+若您的设备弹出了第二张图片所示的页面，请您根据图片进行如下操作
+点击“查看方式”文字旁边的按钮，当选择框弹出时，点击“类别”按钮，页面就会变成和上图所示，您就可以继续操作了。
+
+![pic6](/images/how-to-uninstall-applications-on-pc-or-htpc/6.png)
+
+现在，请您点击“程序”选项卡的“卸载程序”超链接（如图示）。
+
+![pic7](/images/how-to-uninstall-applications-on-pc-or-htpc/7.png)
+
+当您执行完这些操作，来到如下界面时，您就准备好删除应用了。
+
+![pic8](/images/how-to-uninstall-applications-on-pc-or-htpc/8.png)
+
+## 2.删除应用
+
+在上文中我们通过操作打开的页面中，找到您希望删除的程序，点击您希望删除的程序呼，点击“卸载”或带有相同含义的按钮。
+
+![pic9](/images/how-to-uninstall-applications-on-pc-or-htpc/9.png)
+
+当您点击“卸载”按钮后，请您等待30秒到一分钟，直到程序弹出卸载操作窗口，下面我会以卸载一个国产软件为例，向您展示并让您了解卸载应用的方法。
+
+我们现在假设您已经完成了上文的全部步骤
+假设您现在选择了一个程序，点击了卸载，此时有可能会弹出一个卸载程序的弹窗，程序极有可能会引导您保留此程序，所以您一定要注意您选择的选项，例如下图中，程序提示是否需要删除，且高亮了保留程序的选项，所以请您留意高亮的选项是否是真正的“卸载选项”。
+
+![pic10](/images/how-to-uninstall-applications-on-pc-or-htpc/10.png)
+
+有的时候，程序在卸载完成之后，不会向系统报告程序已经被卸载，所以当您尝试卸载第二个软件时可能会出现下图所示的情况，此时不要慌张，重启电脑即可卸载下一个软件。
+
+![pic11](/images/how-to-uninstall-applications-on-pc-or-htpc/11.png)
+
+---
+
+---
+url: /faq/task-manager.md
+---
+# 善用任务管理器
+**Windows任务管理器**是系统的核心工具，能够实时监控并管理运行中的进程、性能及服务，快速结束无响应任务，有效解决系统卡顿问题。作为电教员，在日常维护中熟练掌握并灵活运用任务管理器至关重要。
+
+**应用示例**：\
+教师上课时若遇到WPS无响应、点击关闭按钮无效的情况，即可通过任务管理器强制终止进程，迅速恢复课堂教学。
+
+## 一、如何打开任务管理器
+
+* **有键鼠设备**：\
+  使用快捷键 `Ctrl + Shift + Esc`（适用于 Win7/Win10/Win11），可直接打开任务管理器。
+
+* **无键鼠（仅触屏）**：\
+  长按任务栏（相当于右键点击），在弹出菜单中选择“任务管理器”。
+
+## 二、如何强制终止进程
+
+1. 在任务管理器的“进程”标签页中，找到需要终止的进程。
+2. 长按（或右键点击）该进程，选择“结束任务”。
+3. 若程序窗口仍未关闭，说明未正确终止影响教学的进程，请重复操作。
+4. 终止成功后，重新启动教学程序（如WPS），通常即可恢复正常使用。若问题依旧，可能涉及设备兼容性或程序文件缺失等非偶发性问题。
+
+---
+
+---
+url: /faq/the-soft-keyboard-cannot-type.md
+---
+# 电脑软键盘无法输入字符的解决方法
+![软键盘](/images/the-soft-keyboard-cannot-type/1.png)
+
+本文旨在帮助您解决电脑**软键盘**（ Windows 10 系统默认）无法输入字符的解决方法。至于什么是软键盘，请见上图。
+
+## 错误原因
+
+兼容性问题
+
+\~~或者你压根就没有选中输入框（）~~
+
+## 应急方案
+
+如果急于完成一些操作，您可以试试此方法：
+
+![右键点击按钮](/images/the-soft-keyboard-cannot-type/2.png)
+
+多点几下这个”中“（或“英”），然后再次选中需要输入的区域。
+
+如果此方法无效，请尝试下文中的解决方案。
+
+## 解决方案
+
+![右键点击按钮](/images/the-soft-keyboard-cannot-type/2.png)
+
+1. 任务栏右侧，右键单击（或触屏电脑：长按）“中”（若当前为英文模式则为“英”），点击“设置”。
+2. 选择“常规“。
+
+   ![选择“常规”选项](/images/the-soft-keyboard-cannot-type/3.png)
+3. 下滑找到“兼容性”，打开“使用以前版本的微软拼音输入法”。![选择“兼容性”选项](/images/the-soft-keyboard-cannot-type/4.png)
+4. 正常输入字符。
+
+---
+
+---
+url: /guide/index.md
+---
+# 指南
+::: tip
+本模块正在建设中，会持续更新！
+:::
+
+本模块为电教委员指南的正文部分。相信你在阅读学习之后，一定能有所收获。
+
+---
+
+---
+url: /guide/Chapter0/0.0.chapte-summary.md
+---
+# 0.0 章节总述
+本章将会从多个角度带你快速入门“电教委”这个工作，让你尽快掌握一些必要的基础。
+
+## 良好的心态是一切的基础
+
+在工作时，我们会遇到各种各样的“拦路虎”来阻挡我们完成工作。而在“明知山有虎，偏向虎山行”之前，有一个良好的心理准备作为“防身”的武器是非常重要的：
+
+> [0.1 从这里开始](0.1.before-starting)
+
+## 授人以鱼不如授人以渔
+
+有一个好的媒介素养可以让我们在浩如烟海的信息面前站稳脚跟。而对搜索引擎和当今AI工具的熟练使用更是能让你的信息搜集、汇总、整理能力更上一层楼:
+
+> WIP
+
+## 工欲善其事，必先利其器
+
+在做好准备后，有必要来先认识一下我们工作的“岗位”
+
+> [0.6 关于电子白板](0.6.1about-writeboard.md)
+>
+> [0.7 正确打开或关闭电脑](0.7.correctly-turn-on-and-off-the-computer.md)
+
+## 养兵千日，用兵一时
+
+而在不同的软硬件条件下轻松“匹配”到最适合电教软件是一个“电教委”的基本功。接下来，我们会列举一些常用的软件以供参考：
+
+> WIP
+
+---
+
+---
+url: /guide/Chapter0/0.1.before-starting.md
+---
+# 0.1 在开始之前
+> 电教委主要是教学用电子设备的维护与管理者，更是技术的‘守护者’、责任与担当的践行者。由于他们的存在，让课堂教学更加高效，班级学习氛围更加活跃，让同学老师们能享受数字化教育的时代带来的便利。
+
+做一个合格的电教委，不仅要有足够的技术和想法来处理问题，还要有良好的心理素质。具体可以总结为**CCBMR**：Careful(仔细)、Confident(自信)、Brave(勇气)、Modesty(谦虚)、Relationship(关系)
+
+### Careful
+
+作为班级多媒体的主要管理者、上课突发情况的解决人之一，要做到对情况的**仔细观察、提前发现、快速解决**。举个例子：无法关掉一个窗口的时候记得去看看是不是弹出来了一个对话框。*（你想要更现实的情况：一堆老师同学盯着一个主页面的x不放，对弹出的提示框和响起的提示音不管不顾）*
+
+### Confident
+
+这里的自信不仅是相信自己可以解决这个问题，也是在面对同学老师的质疑时能够相信自己而不是被某些“砖家”指指点点（请永远相信，挺身而出的人总是比在一旁废话的人更耀眼，但不要让你那耀眼的光环过于闪耀而让人嫉妒。）更是在遇到自己未见过的问题时相信自己能够通过**任何能解决问题的方式和方案**来解决它。
+
+### Brave
+
+勇气不仅体现在解决上课时突发的问题（死机、翻页笔出问题、老师返回不到上一页、误触跳转到了什么阴曹地府等等只有你想不到，没有触发不到的问题），也体现在一个人站在讲台上面对同学的起哄时冷静的控场，也体现在面对成为老师上课开玩笑的重点对象时的豁达，还体现在面对技术老师、班级已有电教委时的虚心求教、协助解决问题的能力。
+
+### Modesty
+
+Modesty的含义是“谦虚“，说简单点就是**别装B**，这是作为一个人很重要的一点，也是让你能不被说成“嘉豪”的最好解决方案，**虽然你的班务工作对于班级的良好运转极其有利，但是请时刻记住，这个班级离了你也照样转**。
+你应该懂得适可而止。**班级大屏是帮助老师更好教学，促进同学们高效学习的工具，请不要把它当作炫技的展示板。**
+特别不建议你在专职管理计算机的老师面前炫耀你所掌握的所谓的那点技术皮毛，有些时候并不是他看起来不“懂”就是他不“懂”，也许他有别的计划和打算，若你此时炫耀你那点皮毛，你炫耀好了是展示，闹出事来就是你被炒鱿鱼。
+同时，对电教设备的维护方法很大一部分取决于老师对于电教设备的看法。如果你的老师认可你的工作那自然很好，但**如果老师不希望你大改电教设备，那就适可而止**。否则不管是对你，还是对老师，都不是一个好的结果。
+
+### Relationship
+
+和老师打好关系也是工作中非常重要的一环。**学校设立电教委职务的核心需求就是希望找到相对来说了解电脑的同学，为老师能够正常上课保驾护航**，与老师有一个良好的关系不仅能让你的工作更顺利，也能给你提供很多情感报酬，若你无法与老师保持良好关系，那么老师可能是你工作中最大的阻力。同样，和同学（至少是大多数同学）保持一个良好的关系也是让工作顺利进行的一个重要因素，否则同样也会成为你工作中的极大阻力。
+永远不要忘记水能载舟，亦能覆舟的道理。
+
+## 最后
+
+面对突发情况时，一定要记住**完成大于完美，长时稳定大于一时爽快，极端情况下变通解决问题**。**尽快让老师恢复正常上课大于一切**。至于详细的问题排查可以放到下课时间或放学时间来进行。遇到问题要记得**善用搜索引擎以及AI工具**。
+
+---
+
+---
+url: /guide/Chapter0/0.6.1.about-writeboard.md
+---
+# 0.6.1 关于电子白板
+## 认识电子白板
+
+无论您是否是第一次成为电教委员，但对教室电教设备的认识都是必不可少的。本节讲的就是全国98%学校都配备的——电子白板。
+
+*电子白板通俗来讲也被称为「大屏」、「一体机」、「白板」等。在部分品牌机型，也被称为「智慧教学一体机」、「交互式电子白板」等。在本书中，我们将其称之为「电子白板」*
+
+电子白板在当前现代化的教学中是必不可少的。它通常是连接本班智能设备的中枢。它让老师可以随时调取网络资源，生动地展示课件，也让同学们能走上讲台，用手指直接操作、演示和分享自己的想法。课堂因此变得更加互动，知识的传递也更为直观高效。
+
+通常被安装在两块固定的黑板之间，由两块可移动黑板覆盖；或在一个固定黑板的一侧，由一块可移动的黑板覆盖。（亦有将白板与黑板连接在一起，或安装两块白板的情况，但较少见。）
+
+电子白板按显示方式可分为屏幕式与投影式。*目前，投影式白板已大多被淘汰。*
+
+按照集成程度分类也可以分为一体机和分体机。
+
+投影式白板可以分类为分体机。由白板、投影机、电脑主机（信号源）组成。
+
+![示意图2](/images/writeboard/1.png)
+
+屏幕式也分为一体机和分体机。我们现在最先进和最流行的就是屏幕一体机（即「电子白板」）。
+
+**屏幕一体机和分体机最大的区别就是电脑模块的位置，一体机的电脑是由一个可插拔的 OPS 模块集成到屏幕中的，分体机则是外置电脑，由视频传输线连接到屏幕。**
+
+通俗来讲，就是家里的电视加上触摸功能。分体式就相当于手机投屏，集成式就相当于智能电视。
+
+在认识完分类和简单介绍后，我们来看看这些设备的接口。
+
+![示意图3](/images/writeboard/4.jpg)
+
+## 启动！
+
+在认识完电子白板之后，我们尝试启动它。无论什么机型，大体都分为：通电、开机（6）。
+
+**屏幕一体机（以希沃 FF86EA 为例）**
+
+在大多数一体机中，总电源由一个三角插头接入市电，再通过品字插头连接至一体机。在机器右下方，有一个船形开关用于控制一体机总电源。请将其由“O”拨至“—”位，等待电源指示灯亮起。
+
+按下开机键，等待系统启动。
+
+对于分体机，启动顺序大致为：电脑 → 投影机 → 显示器。请确保投影机电源、电脑电源、显示器电源均已正确接入市电。
+
+---
+
+---
+url: /guide/Chapter0/0.6.2.Getting-to-Know-OPS.md
+---
+# 0.6.2 认识OPS主机模块
+### 什么是 OPS ？
+
+> 以下文段部分内容源自[百度百科](https://baike.baidu.com/item/OPS/8383483)&#x20;
+
+* OPS电脑 (Open Pluggable Specification) 是一种外接式计算模块，外观长得像一个方形的铁皮盒子（如图），
+  ![OPS](/images/Getting-to-Know-OPS/OPS_1.png)(图片源自网络)
+
+它是由NEC、英特尔和微软在2010年宣布的。OPS电脑模块运行在基于Intel和ARMCPU上，运行的操作系统如Windows、Linux 等。使用OPS的主要好处是通过在发生故障时更换计算模块非常容易，从而减少停机时间和维护成本。
+
+* OPS主机一般与 大屏/智慧黑板 搭配使用，OPS 提供 Windows 系统和操作内容供大屏显示，大屏设备大部分情况下只做显示和交互使用。
+
+* OPS电脑系统通过单个80PIN端口连接到交互式平板显示器，该端口提供电源和OPS电脑与显示器之间的所有通信。 满足计算机电源、视频和音频显示、交互式显示器触摸输入的USB和独立使用的独立电源输入等条件的连接。
+  ![OPS](/images/Getting-to-Know-OPS/OPS_2.jpg)
+
+---
+
+---
+url: /guide/Chapter0/0.6.3.Disassembly-of-the-OPS-Host-Module.md
+---
+# 0.6.3 拆解OPS主机模块
+> \[!CAUTION]
+> **建议请专业人员操作，且此类设备通常会有 防拆保修标签，擅自拆除后可能会失去保修！！！**
+>
+> 除非你知道你在干什么，否则**造成设备损坏等后果请自行负责!!!**
+>
+> 如果您还不了解什么是 OPS , 建议先了解此文章内容 [认识OPS主机](https://cnel.smart-teach.cn/faq/Getting-to-Know-OPS)  [关于电子白板](https://cnel.smart-teach.cn/faq/writeboard)
+
+* OPS主机是整个一体机必不可少的一个部件，简而言之就是一台集成度高的迷你电脑主机，通常OPS主机的安装位置于**一体机机身的左侧**
+  ![OPS](/images/Disassembly-of-the-OPS-Host-Module/1.jpg)
+
+![OPS](/images/Disassembly-of-the-OPS-Host-Module/2.jpg)
+
+> \[!NOTE]
+> （注：希沃的OPS主机在**一体机身的右边**
+>
+> ![OPS\_seewo](/images/Disassembly-of-the-OPS-Host-Module/seewo_OPS_1.jpg)
+>
+> ![OPS\_seewo\_P1](/images/Disassembly-of-the-OPS-Host-Module/seewo_OPS_3.jpg)
+>
+> 大部分希沃白板可以通过摁住类似于上图橙色的快拆按钮将OPS拔下来
+>
+> ![OPS\_seewo\_P2](/images/Disassembly-of-the-OPS-Host-Module/seewo_OPS_2.jpg)
+>
+> 一些旧机型(例如s65ea)在船型开关上方和天线下方并非是快拆按钮，而是两个十字螺丝，但是可以拿手拧松，拧松了就可以拔下来。
+
+一般大部分情况下需要将**整块黑板拆下来才能方便拆除**OPS主机
+
+\~~除非你的手很长且能摸得到~~
+
+> 准备工具：
+>
+> * 一把十字螺丝刀
+> * 一把一字螺丝刀 (备用)
+> * \~~一双灵活的手和手臂~~
+> * (选配) 一双防静电维修手套（容易出手汗的建议带上（确信））
+
+## 创维OPS主机拆解 (也适用于大部分OPS主机拆解)
+
+> \[!TIP]
+> 此文段教程也适用于市面上大部分常见的OPS主机，如 鸿合HiteVision 等，但**可能会有所差异，请仔细观察并以实际情况为准！**
+
+> \[!WARNING]
+> 希沃魔改了常规OPS主机规格，故所以此文段教程不适用于 希沃seewo
+
+> \[!NOTE]
+> 图片仅供参考，可能会有所差异，请仔细观察并以实际情况为准
+
+* 首先，将设备彻底关机，然后断电，移除连接在OPS主机模块上的所有线缆
+
+* 按照文章上面的图片所示，找到OPS主机模块位置后，使用 螺丝刀 将固定两侧的螺丝拆除（螺丝接口一般为 十 字状），拆除螺丝后按照图中示意方向取出OPS主机
+
+![OPS](/images/Disassembly-of-the-OPS-Host-Module/3.png)
+
+* 取出后OPS主机模块后，先拆除 无线天线，按照图中所示逆时针旋转取出（如果没有请忽略并查看下一步）
+
+| | |
+| - | - |
+| ![OPS](/images/Disassembly-of-the-OPS-Host-Module/5.jpg) | ![OPS](/images/Disassembly-of-the-OPS-Host-Module/4.jpg) |
+
+* 找到机身盖板的螺丝，一般分别位于机身左右两边各一颗，OPS接口处2颗（注：有一颗螺丝可能会被保修标签覆盖）
+
+> - OPS机身尾部接口
+>   ![OPS机身尾部接口](/images/Disassembly-of-the-OPS-Host-Module/6.jpg)
+>
+> - OPS机身左侧
+>   ![OPS机身左侧](/images/Disassembly-of-the-OPS-Host-Module/7.jpg)
+>
+> - OPS机身右侧
+>   ![OPS机身右侧](/images/Disassembly-of-the-OPS-Host-Module/8.jpg)
+
+* 移除螺丝后，将机身侧盖打开
+
+| | |
+| - | - |
+| ![OPS](/images/Disassembly-of-the-OPS-Host-Module/9.jpg) | ![OPS](/images/Disassembly-of-the-OPS-Host-Module/10.jpg) |
+
+* 移除侧盖后，即可看到主板，CPU散热器，内存等配件，此时你可以进行清理灰尘，更换配件等操作
+
+> \[!NOTE]
+> 清灰时请注意控制力度及其他外原因素
+
+![OPS](/images/Disassembly-of-the-OPS-Host-Module/11.jpg)
+
+* 部分 内存/硬盘插槽 可能设计在主板背部，此时需要将固定主板的所有螺丝卸下，并小心翼翼地将主板移出即可
+
+| | |
+| - | - |
+| ![OPS](/images/Disassembly-of-the-OPS-Host-Module/12.jpg) | ![OPS](/images/Disassembly-of-the-OPS-Host-Module/13.jpg) |
+| ![OPS](/images/Disassembly-of-the-OPS-Host-Module/14.jpg) | ![OPS](/images/Disassembly-of-the-OPS-Host-Module/15.jpg) |
+
+::: details 其他疑问
+如何安装回原样？
+
+\~~请将本文段步骤倒着看一遍~~
+:::
+
+---
+
+---
+url: /guide/Chapter0/0.7.correctly-turn-on-and-off-the-computer.md
+---
+# 0.7 正确打开或关闭电脑
+## 打开电脑
+
+### 对于台式电脑
+
+首先找到电脑主机，它一般是在你的脚边或桌子上的一个铁盒子，然后按下主机上的电源按钮，然后开启显示器（显示器开关一般在屏幕的左下角或右下角；注意，这个开关不是电脑开关，它只能用来开启和关闭显示器）。
+
+### 对于笔记本电脑
+
+翻开电脑屏幕，按下位于键盘左上角、右上角或其他位置的电源按钮。
+
+### 对于一体机
+
+在一体机的屏幕右下角或左下角找到电源按钮，将其按下。
+
+## 关闭电脑
+
+> 下面只列出了一些常用的关机方式，实际可用的关机方式不止下面几种。
+
+### 台式机、笔记本和一体机
+
+#### 方法1：
+
+点击任务栏上的“开始”按钮，然后点击“电源”（或“关机”按钮）按钮，最后选择“关机”。
+
+#### 方法2：
+
+在桌面按下键盘上的`Alt`+`F4`（屏幕键盘可能需要先按下`Fn`键才会显示`F4`键），在下拉菜单中选择“关机”，然后点击“确定”。
+
+> 大部分电脑还可以通过按下电源按钮关机，但这种方式会受到Windows的电源设置影响，有时候使用这种方式不一定能成功关机。还有……显示器上的电源按钮不是电脑的电源按钮，千万不要把这个按钮当做“一键关机”来用！（一体机除外）
+
+---
+
+---
+url: /guide/Chapter2/2-4-Cleanup-System_Disk.md
+---
+# 2.4 系统清理与磁盘空间维护
+* 清理系统盘可以释放磁盘空间，提升系统性能，避免使用时卡顿，定期清理垃圾是一个好的习惯
+
+(部分界面可能会与本页面截图有所不同，请以您以实际出现的页面为标准)
+
+## 使用系统自带的工具
+
+### 磁盘清理 （适用于大部分 Windows 版本）
+
+#### 清理垃圾
+
+* 打开 此电脑 ，找到系统盘后鼠标右键点击 属性 ，在弹出的窗口中，点击 磁盘清理&#x20;
+  ![图片](/images/Cleanup-System_Disk/1.png)
+
+> \[!NOTE]
+> 此按钮在 Windows 11 被替换成  详细信息  ，点击后会跳转到设置
+>
+> 可以在 搜索框 中输入 disk clean 即可打开
+>
+> ![图片](/images/Cleanup-System_Disk/4.png)
+>
+> ![图片](/images/Cleanup-System_Disk/3.png)
+
+* 等待扫描完成后，为了清理更彻底，点击 “清理系统文件” 按钮（如果没有请忽略）
+  ![图片](/images/Cleanup-System_Disk/2.png)
+
+* 再次等待扫描完成后，勾选 **你认为该清理** 的项目（个人建议除 回收站 以外全部勾上）
+
+* 勾选完成后，点击 确定，然后点击 删除文件 即可进行清理
+  ![图片](/images/Cleanup-System_Disk/6.png)
+
+> \[!NOTE]
+> 升级/覆盖安装 过 Windows 10/11 的电脑会有 "以前的 Windows 安装" 项目，如果你的电脑超过10天没有进行 回退 原系统，或 不想回退 / 已经无法进行回退，建议勾选删除
+> 删除过程中会有窗口提示，点击 “是” 即可删除
+> 此操作一旦执行将不可逆
+
+#### 其他选项
+
+* 程序与功能：删除不用的应用程序以释放空间，点击 “清理” 将跳转到 控制面板\程序\程序和功能 ， 在此处选择要卸载的软件，鼠标右键选择 卸载 即可
+  ![图片](/images/Cleanup-System_Disk/7.png)
+* 启用存储感知（适用于 Windows 10 和 Windows 11）：以 Windows 11 为例，在设置-系统-存储中可以找到该选项，根据需要调节设置
+  ![图片](/images/Cleanup-System_Disk/21.png)
+* 使用[Dism ++](https://github.com/Chuyu-Team/Dism-Multi-language)，[清浊](https://pc.dircleaner.com/)等进阶工具（下文会详细介绍 Dism ++ 的使用）
+
+> \[!TIP]
+> 从控制面板中卸载**每次只能卸载一个软件**，可前往 [设置 - 应用 - 应用和功能](ms-settings:appsfeatures) 进行多个软件的卸载，或者使用 第三方卸载工具 进行批量卸载
+
+* 系统还原与卷影复制：
+
+> \[!NOTE]
+> 清理系统还原和卷影复制不会影响个人文件和数据，一般情况下可以放心删除，但会删除之前的还原点，可能会影响系统恢复的能力。因此，建议在清理之前确保没有重要的系统还原点需要保留。
+
+![图片](/images/Cleanup-System_Disk/5.png)
+
+### 设置 （适用于 Windows 10 以上）
+
+* 以 Windows 11 为例，打开 设置 (Windows 键 + I ) > 系统 > 存储  ，或者 [点我o(*￣▽￣*)ブ](ms-settings:storagesense)  直达该页面（点击链接后如浏览器提示 此站点正在尝试打开“设置” ，请点击“打开”）
+  ![图片](/images/Cleanup-System_Disk/8.png)
+
+* 打开后，点击“临时文件”
+  ![图片](/images/Cleanup-System_Disk/10.png)
+
+* 等待扫描完成后，勾选 **你认为该清理** 选项，点击 “删除文件” 按钮，在弹出的提示框中点击 “继续” 即可开始删除
+  ![图片](/images/Cleanup-System_Disk/9.png)
+
+## 通过 厂商附带的 ”系统管家“ 应用
+
+* 一些厂商会在系统中附带安装 XX管家 或者 XX系统管家 等，一般都会有 清理系统盘 的工具选项，我们可以利用这些工具以清理系统盘
+
+（注：操作前请确保已安装对应的软件或者已更新到最新版本）
+
+### 希沃管家
+
+* 打开 希沃管家 主界面，点击”系统盘瘦身“，然后点击”开始扫描“，并等待扫描完成
+  ![seewo](/images/Cleanup-System_Disk/seewo_1.png)
+
+* 扫描完成后，你可以放心清理自动选择的项目，或者手动选择一些项目
+  ![seewo](/images/Cleanup-System_Disk/seewo_2.png)
+
+* 下面还有文件迁移的选项，您可以选择将 文档、桌面、视频、音乐 等文件夹移动到 D盘 或者其他磁盘等
+  ![seewo](/images/Cleanup-System_Disk/seewo_3.png)
+
+![seewo](/images/Cleanup-System_Disk/seewo_4.png)
+
+选择完成后，点击 “立即释放” 即可，等待清理完成即可关闭窗口
+![seewo](/images/Cleanup-System_Disk/seewo_5.png)
+
+## 通过 杀毒软件 附带的工具
+
+* 系统自带的清理工具作用有限，我们可以通过 第三方杀毒软件 附带的 清理工具 以清理应用程序的垃圾等以下为市面上常见的2个杀毒软件的操作示范
+  （注：操作前请确保已安装对应的软件）
+
+### 火绒安全
+
+* 打开 火绒安全 主界面,在应用左侧的列表中点击第4个图标，然后点击 “垃圾清理”
+  ![图片](/images/Cleanup-System_Disk/11.png)
+* 点击 “开始扫描”，并等待扫描完成
+  ![图片](/images/Cleanup-System_Disk/12.png)
+* 扫描完成后，你可以放心清理自动选择的项目，或者手动选择一些项目，选择完成后，点击 “一键清理” 即可,等待清理完成即可关闭窗口
+
+> \[!WARNING]
+> 谨慎选择其他清理项目，请确保清楚你在干什么，否则别乱选！
+
+![图片](/images/Cleanup-System_Disk/13.png)
+![图片](/images/Cleanup-System_Disk/14.png)
+
+### 360安全卫士
+
+* 打开 360安全卫士 主界面，点击“清理加速” ，找到 “深度清理” 的字样并点击，等待扫描完成
+  ![图片](/images/Cleanup-System_Disk/15.png)
+* 扫描完成后，你可以放心清理自动选择的项目，或者手动选择一些项目，选择完成后，点击 “深度清理” 即可,等待清理完成即可关闭窗口
+
+> \[!WARNING]
+> 谨慎选择其他清理项目，请确保清楚你在干什么，否则别乱选！
+
+![图片](/images/Cleanup-System_Disk/18.png)
+
+
+> \[!NOTE]
+> 如果选择了其他清理项目，可能会弹出如下图所示的窗口，如果你知道清理的是什么，请点击“清理所有”以继续完成清理任务，如果你不确定清理的是什么，请点击“仅清理无风险项”以继续，点击后将自动跳过你手动勾选的项目
+
+![图片](/images/Cleanup-System_Disk/17.png)
+
+![图片](/images/Cleanup-System_Disk/16.png)
+
+## 进阶操作
+
+### 使用 Dism ++ 清理
+
+> \[!CAUTION]
+> 建议专业人员操作，除非你知道你在干什么，否则造成系统损坏等后果请自行负责
+
+下载 Dism ++ :
+https://github.com/Chuyu-Team/Dism-Multi-language/releases
+
+![图片](/images/Cleanup-System_Disk/19.png)
+
+镜像链接直达下载（适用于无法访问的用户）：
+https://ghproxy.net/https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism++10.1.1002.1B.zip
+
+* 下载完成后，将压缩包进行解压，解压完成后，双击运行 Dism ++ x86.exe 程序，点击”同意“
+
+打开后在应用左侧的列表中选择 空间回收 ，在列表中点击任意一个选项即可在应用右侧查看 描述 及 详细信息，勾选你想清理的项目，选择完成点击扫描并等待（直接点击“清理“会先扫描完然后再自动清理）
+![图片](/images/Cleanup-System_Disk/20.png)
+(截图中勾选的项目仅为示范)
+
+> \[!WARNING]
+> 部分项目清理过后可能会导致系统损坏症状，**除非你知道程序在干什么 或者 你很清楚你在干什么**，请谨慎选择！
+
+扫描完成后，点击 清理 ，点击 确定 即可开始清理
+
+> 清理部分项目时可能会弹出提示框确认，点击 确定 即可进行清理，点击 取消 将跳过清理该项
+
+---
+
+---
+url: /school/index.md
+---
+# 多校联盟
+
+“**多校联盟**”是一个由《电教委员指南》创建的学校大屏信息汇总平台。它主要帮助电教委员快速查看全国各地学校的大屏应用实例，为自身工作提供参考模板和灵感。
+
+## 学校列表
+
+| 地区 | 学校类型 | 学校 |
+| --- | --- | --- |
+| 天津市河西区 | 小学 | [天津师范大学附属小学](/school/list/天津师范大学附属小学) |
+| 天津市河西区 | 完全中学 | [天津市实验中学](/school/list/天津市实验中学) |
+| 湖北省仙桃市 | 高级中学 | [湖北省仙桃中学](/school/list/湖北省仙桃中学) |
+| 江苏省苏州市吴中区 | 小学 | [苏州市吴中区莫厘实验小学（原东山中心小学）](/school/list/苏州市吴中区莫厘实验小学（原东山中心小学）) |
+| 江苏省苏州市吴中区 | 完全中学 | [江苏省木渎高级中学](/school/list/江苏省木渎高级中学) |
+| 广西壮族自治区柳州市鱼峰区 | 初级中学 | [柳州铁一中学（初中部）](/school/list/柳州铁一中学（初中部）) |
+| 陕西省汉中市城固县 | 初级中学 | [城固县朝阳初级中学](/school/list/城固县朝阳初级中学) |
+| 云南省宣威市 | 完全中学 | [宣威市第一中学](/school/list/宣威市第一中学) |
+| 山东省烟台市开发区 | 初级中学 | [烟台开发区实验中学](/school/list/烟台开发区实验中学) |
+| 广东省佛山市顺德新城区 | 高级中学 | [顺德华侨中学](/school/list/顺德华侨中学) |
+| 四川省成都市龙泉驿区 | 完全中学 | [成都航天中学](/school/list/成都航天中学) |
+| 北京市朝阳区 | 十二年一贯制 | [北京探月学校](/school/list/北京探月学校) |
+| 广东省广州市天河区 | 完全中学 | [广州市第一一三中学（东方校区）](/school/list/广州市第一一三中学（东方校区）) |
+| 山东省济南市 | 高级中学 | [山东师范大学附属中学](/school/list/山东师范大学附属中学) |
+| 吉林省松原市前郭尔罗斯蒙古族自治县 | 高级中学 | [前郭尔罗斯蒙古族自治县第二高级中学](/school/list/前郭尔罗斯蒙古族自治县第二高级中学) |
+| 河北省张家口市张北县 | 高级中学 | [张北县第一中学](/school/list/张北县第一中学) |
+| 吉林省前郭尔罗斯蒙古族自治县 | 初级中学 | [前郭尔罗斯蒙古族自治县第三中学](/school/list/前郭尔罗斯蒙古族自治县第三中学) |
+| 山东省济南市历城区 | 高级中学 | [济南市历城第一中学](/school/list/济南市历城第一中学) |
+| 山东省烟台市 | 高级中学 | [山东省莱州市第一中学](/school/list/山东省莱州市第一中学) |
+| 浙江省温州市瓯海区 | 高级中学 | [浙江省温州中学](/school/list/浙江省温州中学) |
+| 浙江省温州市永嘉县 | 九年一贯制学校 | [永嘉县东方外国语学校](/school/list/永嘉县东方外国语学校) |
+| 广东省佛山市禅城区 | 高级中学 | [佛山市第一中学](/school/list/佛山市第一中学) |
+| 浙江省温州市鹿城区 | 高级中学 | [温州市第二高级中学](/school/list/温州市第二高级中学) |
+| 北京市海淀区 | 十二年一贯制学校 | [北京市海淀外国语实验学校（海淀校区）](/school/list/北京市海淀外国语实验学校（海淀校区）) |
+| 河北省张家口市怀来县 | 十二年一贯制学校 | [北京市海淀外国语实验学校（京北校区）](/school/list/北京市海淀外国语实验学校（京北校区）) |
+| 北京市丰台区 | 完全中学 | [中国人民大学附属中学丰台学校](/school/list/中国人民大学附属中学丰台学校) |
+| 惠州市惠城区 | 高级中学 | [惠州市实验中学](/school/list/惠州市实验中学) |
+| 惠州市惠城区 | 高级中学 | [惠州市实验中学北校区](/school/list/惠州市实验中学北校区) |
+| 浙江省金华市金东区 | 高级中学 | [金华市外国语学校](/school/list/金华市外国语学校) |
+| 浙江省金华市婺城区 | 初级中学 | [金华市第四中学](/school/list/金华市第四中学) |
+| 广东省揭阳市榕城区 | 高级中学 | [揭阳华侨高级中学](/school/list/揭阳华侨高级中学) |
+| 上海市松江区 | 高级中学 | [华东师范大学松江实验高级中学](/school/list/华东师范大学松江实验高级中学) |
+| 河南省郑州市金水区 | 高级中学 | [郑州市第四十七高级中学](/school/list/郑州市第四十七高级中学) |
+| 广西壮族自治区 来宾市 兴宾区 | 小学 | [来宾市实验小学](/school/list/来宾市实验小学) |
+| 天津市红桥区 | 中等职业学校 | [天津市红星职业中等专业学校](/school/list/天津市红星职业中等专业学校) |
+| 广西壮族自治区桂林市灵川县 | 完全中学 | [桂林市宝湖中学](/school/list/桂林市宝湖中学) |
+| 广西壮族自治区桂林市七星区 | 完全中学 | [桂林市桂电中学](/school/list/桂林市桂电中学) |
+| 广西壮族自治区桂林市临桂区 | 高级中学 | [桂林市桂林中学临桂校区](/school/list/桂林市桂林中学临桂校区) |
+| 东莞中学南城学校 | 初级中学 | [东莞中学南城学校](/school/list/东莞中学南城学校) |
+| 东莞市海逸外国语学校（中学部） | 高级中学 | [东莞市海逸外国语学校（中学部）](/school/list/东莞市海逸外国语学校（中学部）) |
+| 新疆奎屯市 | 初级中学 | [奎屯市第一中学](/school/list/奎屯市第一中学) |
+
+---
+
+---
+url: /school/list/东莞中学南城学校.md
+description: 东莞中学南城学校的大屏信息
+---
+# 东莞中学南城学校
+
+### 学校名称
+
+东莞中学南城学校
+
+### 地区
+
+广东省东莞市南城区
+
+### 学校位置
+
+广东省东莞市南城区育才路13号
+
+### 学校类型
+
+初级中学
+
+### 信息中心位置
+
+实验楼四楼（三号楼旁边）
+
+### 班级大屏类型
+
+一体机（截止2025.8.30仅知晓四号楼和五号楼已更换一体机）
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+FV86EV
+
+### 班级大屏操作系统
+
+Windows 10 22H2
+
+部分教室是Windows 10 神州网信政府版**的壁纸**
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+这里的老师管理很严，基本上不让乱装软件
+在这三年内反正我是没见到管理宽松的老师（2022-2025届学生）
+网络管理更是只要没校园直播就干脆不开放
+我刚来到这所学校还是Windows 7+冰点还原7.x，现在情况不知道
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/东莞市海逸外国语学校（中学部）.md
+description: 东莞市海逸外国语学校（中学部）的大屏信息
+---
+# 东莞市海逸外国语学校
+
+### 学校名称
+
+东莞市海逸外国语学校（中学部）
+
+### 学校位置
+
+广东省东莞市厚街镇学府路5号之一
+
+### 学校类型
+
+完全中学
+
+### 信息中心位置
+
+主服务器位置未知，信息教室零散分布在两栋教学楼
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+MC\*\*\*\*\*\*（后面忘了下回补充）
+
+### 班级大屏操作系统
+
+统一使用Windows 10 22H2（但为啥是家庭版）
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+本校为PC外接大屏，讲台无屏幕，有键鼠但都是有线，使用HDMI传输画面和声音，外设使用另外线缆连接，展台是新款的SC06
+学校电脑使用分辨率1920x1080，教室的音响是拿来作广播音响（啊对的你没听错）导致上课用希沃自带外放体验巨差
+教室统一电脑配置：
+CPU信息：Intel Core i5-9500
+运行内存：8GB
+硬盘：unknown（下回补充）
+
+### 备注
+
+整体上来说老师都很支持aiwb许多优质项目，本人面对级部考试问题向级长推荐ExamShowBorad也是非常接受
+同学们基本上面对ci，cw，ExamShowBorad都感觉非常新奇
+技术员水平未知
+
+---
+
+---
+url: /school/list/中国人民大学附属中学丰台学校.md
+---
+# 中国人民大学附属中学丰台学校
+
+### 学校名称
+
+中国人民大学附属中学丰台学校
+
+### 地区
+
+北京市丰台区
+
+### 学校位置
+
+北京市丰台区王佐镇民族苑路9号
+
+### 学校类型
+
+完全中学
+
+### 信息中心位置
+
+五层西侧
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+F86EA
+
+### 班级大屏操作系统
+
+Windows 7 专业版
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/佛山市第一中学.md
+---
+# 佛山市第一中学
+
+### 学校名称
+
+佛山市第一中学
+
+### 地区
+
+广东省佛山市禅城区
+
+### 学校位置
+
+广东省佛山市禅城区文沙路25号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+暂未探明
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+FA86EK
+
+### 班级大屏操作系统
+
+Windows 10 神州网信政府版
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/前郭尔罗斯蒙古族自治县第三中学.md
+description: 前郭尔罗斯蒙古族自治县第三中学的班级大屏信息
+---
+# 前郭尔罗斯蒙古族自治县第三中学
+
+### 学校名称
+
+前郭尔罗斯蒙古族自治县第三中学
+
+### 地区
+
+吉林省前郭尔罗斯蒙古族自治县
+
+### 学校位置
+
+吉林省前郭尔罗斯蒙古族自治县阿穆尔街道松江大街556号
+
+### 学校类型
+
+初级中学
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+四代机 *存疑*
+
+### 班级大屏操作系统
+
+Windows10
+
+### 冰点还原
+
+无
+
+---
+
+---
+url: /school/list/前郭尔罗斯蒙古族自治县第二高级中学.md
+description: 前郭尔罗斯蒙古族自治县第二高级中学的班级大屏信息
+---
+# 前郭尔罗斯蒙古族自治县第二高级中学
+
+### 学校名称
+
+前郭尔罗斯蒙古族自治县第二高级中学
+
+### 地区
+
+吉林省前郭尔罗斯蒙古族自治县
+
+### 学校位置
+
+吉林省松原市前郭尔罗斯蒙古族自治县源江东路1025号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+暂无
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+Donview
+
+### 班级大屏型号
+
+DS-651WMS-LO2P
+
+### 班级大屏操作系统
+
+Windows7 旗舰版
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+我校大概率除部分办公室外，其余计算机均无法连接网络。信息教室的学生端显示CPU为英特尔至强E5-26系列，判断为虚拟机环境。我校计算机教室使用i5-12450H处理器的希沃华腾计算机，无声音设备，有网络，班级大屏无网络，信息教室大屏为鸿合，安装有ICC-CE。
+
+---
+
+---
+url: /school/list/北京市海淀外国语实验学校（京北校区）.md
+---
+# 北京市海淀外国语实验学校（京北校区）
+
+### 学校名称
+
+北京市海淀外国语实验学校（京北校区）
+
+### 地区
+
+河北省张家口市怀来县
+
+### 学校位置
+
+河北省张家口市怀来县北辛堡镇方家冲村北京市海淀外国语实验学校京北校区
+
+### 学校类型
+
+十二年一贯制学校
+
+### 信息中心位置
+
+6号楼 5层
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+BV86EV 为主
+
+### 班级大屏操作系统
+
+22H2
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/北京市海淀外国语实验学校（海淀校区）.md
+---
+# 北京市海淀外国语实验学校（海淀校区）
+
+### 学校名称
+
+北京市海淀外国语实验学校（海淀校区）
+
+### 地区
+
+北京市海淀区
+
+### 学校位置
+
+北京市海淀区四季青镇杏石口路20号
+
+### 学校类型
+
+十二年一贯制学校
+
+### 信息中心位置
+
+N6楼北翼三层
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[x] 其他
+
+### 班级大屏品牌
+
+杂牌
+
+### 班级大屏型号
+
+未知
+
+### 班级大屏操作系统
+
+Windows 10 1909
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/北京探月学校.md
+description: 北京探月学校的班级大屏信息
+---
+# 北京探月学校
+
+### 学校名称
+
+北京探月学校
+
+### 地区
+
+北京市朝阳区
+
+### 学校位置
+
+北京市朝阳区林萃路2号
+
+### 学校类型
+
+十二年一贯制
+
+### 信息中心位置
+
+C区
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+EEO，MaxHub与Seewo 三种混用
+
+### 班级大屏型号
+
+尺寸和种类及其繁多
+
+### 班级大屏操作系统
+
+Windows 10 1909~22H2 均有
+
+### 冰点还原
+
+无
+
+### 备注
+
+默认每个教室配置两块电子白板，均为至少 20 点触控
+几乎所有设备均为灵活设备，带轮子可移动到其他教室，也经常因为各类校内活动调动白版。仅有少数白班固定在教室内墙面。
+
+---
+
+---
+url: /school/list/华东师范大学松江实验高级中学.md
+---
+# 华东师范大学松江实验高级中学
+
+### 学校名称
+
+华东师范大学松江实验高级中学
+
+### 地区
+
+上海市松江区
+
+### 学校位置
+
+上海市松江区九川泾路 100 弄
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+2 号楼 3 层信息组
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+*No response*
+
+### 班级大屏操作系统
+
+Windows 10、Windows 11
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+有希沃集控、全天候掌上看班（老师都喜欢用）。
+
+希沃联网情况：
+
+* 有线网络：
+  * 可连接外部互联网
+  * 可访问校内网特殊资源（such as \
+    很多老师都喜欢用这个共享资源\
+    ps. \\\照片 有神秘资源
+
+* 无线网络（通用）：
+  * 所有 sjedu 系统内的学校使用统一通用的无线网络（名称通常为：sjedu-1X、sjedu-Web-Auth）
+  * sjedu 基操，仅可访问外部互联网。
+  * 需要下载天融信和准入控件（网络登录成功后打开任意网页会提示下载，如果没有就是已经装好了）
+  * 登录账号和密码为 sjedu 系统账号（默认为：身份证号）和密码（默认为：SJedu#身份证号后8位）
+
+2025 年 9 月全校新增视美泰（ShiMeta）电子班牌。部分（可能的）参数如下：
+
+开学刚装好的时候时，班牌无网络，没有应用锁。
+
+后来，校方要求电教委员给班牌配置 sjedu 的无线网络。结果连上网之后就被设置了应用锁，无法退出班牌程序，解锁密码未知（）
+
+只能通过一些特殊手段来 pj（如何 pj 请进入「SSE 华高智教中心」查看 😋）
+
+### 备注
+
+欢迎华高电教加入「{STC in SEHS of ECNU} 华高智教中心」！\
+这是一个由学生自治的校内电教服务平台，旨在精准培训电教委员，进一步推进华高电教建设。
+
+我们（可能）正在全校范围内推广包括但不限于 ClassIsland 的教学辅助软件！
+
+点击链接加入群聊【{STC in SEHS of ECNU} 华高智教中心】：https://qm.qq.com/q/CS98R3jvKC
+
+**[（Ad：还有关注星标谢谢喵）](https://bonjour.xingbiao.icu)**
+
+---
+
+---
+url: /school/list/城固县朝阳初级中学.md
+description: 城固县朝阳初级中学的班级大屏信息
+---
+# 城固县朝阳初级中学
+
+### 学校名称
+
+城固县朝阳初级中学
+
+### 地区
+
+陕西省汉中市城固县
+
+### 学校位置
+
+陕西省汉中市城固县朝阳路新朝阳中学对面西南方向140米
+
+### 学校类型
+
+初级中学
+
+### 信息中心位置
+
+暂无数据
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+海康威视
+
+### 班级大屏操作系统
+
+Windows 10
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+暂无
+
+---
+
+---
+url: /school/list/天津市实验中学.md
+description: 天津市实验中学的班级大屏信息
+---
+# 天津市实验中学
+
+### 学校名称
+
+天津市实验中学
+
+### 地区
+
+天津市河西区
+
+### 学校位置
+
+天津市河西区平山道1号
+
+### 学校类型
+
+完全中学
+
+### 信息中心位置
+
+思学楼C座 5楼
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+所有班级使用科大讯飞。思学楼A座1楼阶梯教室使用新华三。
+
+### 班级大屏操作系统
+
+Windows10 Education。思学楼A座1楼阶梯教室使用Windows11。
+
+### 冰点还原
+
+有
+
+---
+
+---
+url: /school/list/天津市红星职业中等专业学校.md
+---
+# 天津市红星职业中等专业学校
+
+### 学校名称
+
+天津市红星职业中等专业学校
+
+### 地区
+
+天津市红桥区
+
+### 学校位置
+
+红桥区丁字沽三号路45号
+
+### 学校类型
+
+中等职业学校
+
+### 信息中心位置
+
+实训楼4楼办公室
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+S65EA，S65EB
+
+### 班级大屏操作系统
+
+Windows7
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/天津师范大学附属小学.md
+description: 天津师范大学附属小学的班级大屏信息
+---
+# 天津师范大学附属小学
+
+### 学校名称
+
+天津师范大学附属小学
+
+### 地区
+
+天津市河西区
+
+### 学校位置
+
+天津市河西区平山道48号
+
+### 学校类型
+
+小学
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+华为
+
+### 班级大屏操作系统
+
+Windows10
+
+### 冰点还原
+
+无
+
+---
+
+---
+url: /school/list/奎屯市第一中学.md
+---
+# 奎屯市第一中学
+
+### 学校名称
+
+奎屯市第一中学
+
+### 地区
+
+新疆奎屯市
+
+### 学校位置
+
+奎屯市伊犁路75号
+
+### 学校类型
+
+初级中学
+
+### 信息中心位置
+
+暂无
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+seewo
+
+### 班级大屏型号
+
+FB86EA
+
+### 班级大屏操作系统
+
+Windows 10
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/宣威市第一中学.md
+description: 宣威市第一中学的班级大屏信息
+---
+# 宣威市第一中学
+
+### 学校名称
+
+宣威市第一中学
+
+### 地区
+
+云南省宣威市
+
+### 学校位置
+
+云南省宣威市菜园街6号
+
+### 学校类型
+
+完全中学
+
+### 信息中心位置
+
+高中部至真楼2楼
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+欧帝、Seeow
+
+### 班级大屏操作系统
+
+Windows 10 education
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+暂无
+
+---
+
+---
+url: /school/list/山东师范大学附属中学.md
+description: 山东师范大学附属中学的班级大屏信息
+---
+# 山东师范大学附属中学
+
+### 学校名称
+
+山东师范大学附属中学
+
+### 地区
+
+济南市历下区
+
+### 学校位置
+
+济南市历下区山师北街3号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+暂无
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+*等待补充*
+
+### 班级大屏操作系统
+
+Win10 19xx 且被希沃魔改过
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+我们新盖了一座综合楼，里面的一体机是新款的（就是带着黑板那种的，不用再怕断头了）
+
+### 备注
+
+注意：
+
+* 本人不建议在本学校对一体机进行大改（e.g.重装系统，加一个小屏），这边老师不认可这种行为；安装个批注软件，电子课表就很超前了。
+* 2022级的电教水平都不是很高（除了我，和两个我认识的朋友），由于本人已毕业不知道后面怎么样
+* 我们学校的那个希沃魔改的Win10很奇怪，你会遇到很多无法解释的问题：无法更新/重置系统、明明已经预装激活（电教老师这样说的）但还会显示未激活、莫名其妙很卡、无法通过Windows自带媒体播放器播放视频、无法进入微软商店。。。。
+* 在我接触过的老师中，电脑水平普遍不强，且希沃自适应情况较多。
+
+---
+
+---
+url: /school/list/山东省莱州市第一中学.md
+---
+# 山东省莱州市第一中学
+
+### 学校名称
+
+山东省莱州市第一中学
+
+### 地区
+
+山东省烟台市
+
+### 学校位置
+
+山东省烟台市莱州市光州东街1288号（新校）山东省烟台市莱州市文昌路一中巷1号 （老校）
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+新校科技楼三楼
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+BV86ED（新校）
+
+### 班级大屏操作系统
+
+Windows10 1909
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+冰点密码：456258（可能已被修改）
+
+### 备注
+
+如遇一体机问题请由班主任上报给学校管理员
+
+---
+
+---
+url: /school/list/广州市第一一三中学（东方校区）.md
+description: 广州市第一一三中学（东方校区）的班级大屏信息
+---
+# 广州市第一一三中学（东方校区）
+
+### 学校名称
+
+广州市第一一三中学（东方校区）
+
+### 地区
+
+广东省广州市天河区
+
+### 学校位置
+
+广东省广州市天河区东方二路1号
+
+### 学校类型
+
+完全中学
+
+### 信息中心位置
+
+4404室
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+MC86FEA
+
+### 班级大屏操作系统
+
+Windows 10 21H2 Professional
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+我校本校区为4-7代机混装，系统有win7家庭，win1021H2家庭，win1021H2专业，win10神州网信等，其中有同学自行安装win11。大多数班级仅使用标准WPS，希沃白板，希沃视频展台，我班额外使用ClassIsland2+IslandCaller(暂不可用)，EasiAuto，Inkeys(临时)，ICCCE(暂不可用)，SecRandom（临时）等软件
+
+---
+
+---
+url: /school/list/张北县第一中学.md
+description: 张北县第一中学的班级大屏信息
+---
+# 张北县第一中学
+
+### 学校名称
+
+张北县第一中学
+
+### 地区
+
+河北省张家口市张北县
+
+### 学校位置
+
+河北省张家口市张北县张北镇中都南大街1号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+行政楼二楼广播室
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+本部使用鸿合，高三部使用欧帝/鸿合
+
+### 班级大屏操作系统
+
+Windows 10 & Windows 11
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+我校近几年在教学信息化建设上取得了长足的进步，首先是实现了”光纤入班“”WIFI通校园“。
+其次还在很多班级试点并实现了Classisland的使用，极大的解放了同学们的学习精力，初步实现了数字化教学和无尘化教学。
+
+---
+
+---
+url: /school/list/惠州市实验中学.md
+---
+# 惠州市实验中学
+
+### 学校名称
+
+惠州市实验中学
+
+### 地区
+
+惠州市惠城区
+
+### 学校位置
+
+惠州市惠城区三环南路1号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+实验中学教学楼
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+BF86ED
+
+### 班级大屏操作系统
+
+Windows10 Pro
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/惠州市实验中学北校区.md
+---
+# 惠州市实验中学北校区
+
+### 学校名称
+
+惠州市实验中学北校区
+
+### 地区
+
+惠州市惠城区
+
+### 学校位置
+
+惠州市惠城区白鹭湖
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+教学楼2楼
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+BF86ED
+
+### 班级大屏操作系统
+
+Windows10 Pro
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/成都航天中学.md
+description: 成都航天中学的班级大屏信息
+---
+# 成都航天中学
+
+### 学校名称
+
+成都航天中学
+
+### 地区
+
+四川省成都市
+
+### 学校位置
+
+四川省成都市龙泉驿区车城西四路366号
+
+### 学校类型
+
+完全中学
+
+### 信息中心位置
+
+未知
+
+### 班级大屏类型
+
+其他
+
+### 班级大屏品牌
+
+鸿合
+
+### 班级大屏型号
+
+HD-I8035E
+
+### 班级大屏操作系统
+
+部分Windows 7旗舰版与部分Windows 10专业版混装
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+本校为PC外接大屏，有键盘，使用VGA传输画面。部分是较新的鸿合大屏和旧款希沃大屏，型号未探明。使用多媒体控制器硬切换展台/电脑，展台为鸿合老式视频展台。实验楼部分使用日立投影仪+鸿合投影机用白板
+学校电脑大多使用分辨率为1024x768（屏幕可用最高且最推荐分辨率为1920x1080），看着显示画面较扁，Windows 7设备存在因驱动而导致的音质低问题，已探明不是硬件问题。教学体验偏差。
+教室大多数电脑配置：
+CPU信息：Intel Core i3-4150
+运行内存：4GB
+硬盘：C盘用的是金士顿固态硬盘，D盘是机械硬盘。存储空间充裕。
+冰点还原：老版本Deepfreeze，密码可用Meltdown破解，已探明全校通用冰点管理密码为jsg123。
+
+### 备注
+
+老师总体来说较为支持Aiwb上的优质项目，但我个人精力有限，不想去其他班冒着社死风险瞎弄。
+部分同学较为顽固守旧，出现“能用就行了，安排那么多高级的东西干什么”的心理。
+技术员有点技术但不多，请见https://forum.smart-teach.cn/d/670
+本人班上使用Windows 11 LTSC，总体体验良好。以下为部分实装图片（可能较旧）：
+
+![/成都航天中学/1.png](img/成都航天中学/1.png)
+![/成都航天中学/2.png](img/成都航天中学/2.png)
+![/成都航天中学/3.png](img/成都航天中学/3.png)
+
+---
+
+---
+url: /school/list/揭阳华侨高级中学.md
+---
+# 揭阳华侨高级中学
+
+### 学校名称
+
+揭阳华侨高级中学
+
+### 地区
+
+广东省揭阳市榕城区
+
+### 学校位置
+
+揭阳市榕城区临江南路
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+电教sunset协会（总部东校区，其他：主校区、南校区）
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+MT41A（居多）、MT41B（较少）、MT71A
+
+### 班级大屏操作系统
+
+Window10 1703、Windows 10 LTSC 2019（仅部分班级）、Windows 10 22H2、\[Windows11精简版（已重装回Windows11）]
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+### 所使用的软件
+
+* 课表软件：ClassIsland
+* PPT批注：软件自带、希沃PPT助手/希沃课堂助手（居多）、希沃侧边栏（Windows端和Android端均有）、锐捷课堂小助（较少）
+* 课件与资料：MS Office2016、2021、2024；WPS Office；希沃白板；锐捷课堂小助（较少）；腾讯文档（部分班级）
+* 文件传输：QQ
+* 浏览器：希沃浏览器、edge、Firefox等
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/来宾市实验小学.md
+---
+# 来宾市实验小学
+
+### 学校名称
+
+来宾市实验小学
+
+### 地区
+
+广西壮族自治区 来宾市 兴宾区
+
+### 学校位置
+
+兴宾区北二路218号
+
+### 学校类型
+
+小学
+
+### 信息中心位置
+
+没有
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+*No response*
+
+### 班级大屏操作系统
+
+Windows 10
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/柳州铁一中学（初中部）.md
+description: 柳州铁一中学（初中部）的班级大屏信息
+---
+# 柳州铁一中学（初中部）
+
+### 学校名称
+
+柳州铁一中学（初中部）
+
+### 地区
+
+广西壮族自治区柳州市
+
+### 学校位置
+
+广西壮族自治区柳州市鱼峰区新福路1号
+
+### 学校类型
+
+初级中学
+
+### 信息中心位置
+
+没有
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏操作系统
+
+Windows 10 & Windows 11 & Windows 7
+
+### 冰点还原
+
+无
+
+---
+
+---
+url: /school/list/桂林市宝湖中学.md
+---
+# 桂林市宝湖中学
+
+### 学校名称
+
+桂林市宝湖中学
+
+### 地区
+
+广西壮族自治区桂林市灵川县
+
+### 学校位置
+
+金山路9号
+
+### 学校类型
+
+完全中学
+
+### 信息中心位置
+
+科技楼5楼
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃（SEEWO）
+
+### 班级大屏型号
+
+*No response*
+
+### 班级大屏操作系统
+
+大部分为 Windows 10 专业版
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+> \[!IMPORTANT]
+> 学校的一体机均有冰点还原功能，但是截至此文档的编辑者毕业离开，冰点还原仍未启用
+
+所有一体机使用触摸框，学校使用希沃集控来管理一体机，通过希沃服务和希沃管家进行内网直播、获取教室实时画面、推送通知和下课锁屏服务（学长有话说）此文档的编辑者曾使用 Iobit Uninstaller 绕过输密码环节强行卸载希沃管家，以达到使一体机暂时不受集控管理的目的（doge）但是操作完了记得装回去啊喂！
+(ノ｀Д)ノ不要尝试在粉碎希沃管家有关文件时勾选上“防止恢复”之类的选项，不然你在装回去的时候会发现被粉碎文件无法被解压，到时候等着你的就是重装/重置系统咯
+ヽ(\*。>Д<)o゜
+
+### 备注
+
+> \[!WARNING]
+> 此文档的信息截止至 2024 年 7 月，内容可能已经过时。如果有宝湖的学弟学妹们看到此文档，可以来此文档的 [GitHub 仓库](https://github.com/CN-E-Learning/CN-E-Learning/)更新信息噢
+> ヾ(•ω•\`)o
+
+---
+
+---
+url: /school/list/桂林市桂林中学临桂校区.md
+---
+# 桂林市桂林中学临桂校区
+
+### 学校名称
+
+桂林市桂林中学临桂校区
+
+### 地区
+
+广西壮族自治区桂林市临桂区
+
+### 学校位置
+
+桂林市临桂区沙塘路28号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+教师办公楼8楼 信息中心办公室
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+F86EA
+
+### 班级大屏操作系统
+
+Windows 10 Pro
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+信息中心允许自行重装电脑（重装系统前请记录IP配置），允许申请解除冰点还原，采购了希沃集控
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/桂林市桂电中学.md
+---
+# 桂林市桂电中学
+
+### 学校名称
+
+桂林市桂电中学（原桂林电子科技大学附属外语实验中学）
+
+### 地区
+
+广西壮族自治区桂林市七星区
+
+### 学校位置
+
+金鸡路1号
+
+### 学校类型
+
+完全中学
+
+### 信息中心位置
+
+无信息中心
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃（SEEWO）
+
+### 班级大屏型号
+
+*No response*
+
+### 班级大屏操作系统
+
+大部分为 Windows 10 LTSC 2019 或 2021 ，小部分被往届同学重装至 Windows 10 或 Windows 11 的专业版
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+所有一体机使用电容屏，部分电容屏故障的外接了触摸框；校园网经常出问题，需要调教一体机时建议通过U盘传输所需文件；部分一体机的USB接口老化。
+由于ltsc系统阉割了大部分系统组件（甚至没有图片查看器和播放器），因此建议你安装对触摸操作支持完善的软件，或者前往[为 Windows 长期服务渠道（LTSC）添加微软应用商店以安装必要的系统组件](/faq/Add-Microsoft-Store-for-Windows-LTSC.md)安装微软商店以获取必要的系统组件。
+
+### 备注
+
+> \[!WARNING]
+> 此文档的内容仅针对于桂电中学（即高中部）。目前的大屏信息为桂林电子科技大学第 6 教学楼的设备信息，与桂电中学附属学校（即初中部）无关。
+
+---
+
+---
+url: /school/list/永嘉县东方外国语学校.md
+---
+# 永嘉县东方外国语学校
+
+### 学校名称
+
+永嘉县东方外国语学校
+
+### 地区
+
+浙江省温州市永嘉县
+
+### 学校位置
+
+永嘉县南城街道下堡西路
+
+### 学校类型
+
+九年一贯制学校
+
+### 信息中心位置
+
+*No response*
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+FG86EC
+
+### 班级大屏操作系统
+
+Windows 10 Pro
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/江苏省木渎高级中学.md
+description: 江苏省木渎高级中学的班级大屏信息
+---
+# 江苏省木渎高级中学
+
+### 学校名称
+
+江苏省木渎高级中学
+
+### 地区
+
+江苏省苏州市
+
+### 学校位置
+
+江苏省苏州市吴中区木东路1号
+
+### 学校类型
+
+完全中学
+
+### 信息中心位置
+
+信息与图书中心
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+希沃 (SEEWO)
+
+### 班级大屏型号
+
+未知且不同教室不同
+
+### 班级大屏操作系统
+
+Windows 10 1903(默认，自动更新关闭，可更新到22H2)
+
+### 冰点还原
+
+无
+
+### 备注
+
+目前已知有4班级安装了ClassIsland，其中1电脑使用IslandCaller（此班级还重装系统升级到了Windows 11），我班电脑使用SecRandom，我班旧教室仅有CI，1电脑目前仅知有CI，其他未知。
+
+---
+
+---
+url: /school/list/济南市历城第一中学.md
+description: 济南市历城第一中学的班级大屏信息
+---
+# 济南市历城第一中学
+
+### 学校名称
+
+济南市历城第一中学
+
+### 地区
+
+山东省济南市
+
+### 学校位置
+
+山东省济南市历城区仲宫街道
+
+### 学校类型
+
+高级中学
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+FV86EB
+
+### 班级大屏操作系统
+
+Windows 10 专业版
+
+### 冰点还原
+
+无
+
+---
+
+---
+url: /school/list/浙江省温州中学.md
+---
+# 浙江省温州中学
+
+### 学校名称
+
+浙江省温州中学
+
+### 地区
+
+浙江省温州市瓯海区
+
+### 学校位置
+
+浙江省温州市瓯海区温中路165号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+科技楼 2 楼电教中心
+
+### 班级大屏类型
+
+* \[x] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+投影仪：鸿合，一体机：希沃
+
+### 班级大屏型号
+
+希沃一体机：FG86EA（北教学楼东）
+
+### 班级大屏操作系统
+
+希沃一体机：Windows 10 Pro，投影仪：Windows 7
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+内网
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/温州市第二高级中学.md
+---
+# 温州第二高级中学
+
+### 学校名称
+
+温州第二高级中学
+
+### 地区
+
+浙江省温州市鹿城区
+
+### 学校位置
+
+浙江省温州市鹿城区盛锦路2号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+*No response*
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+*No response*
+
+### 班级大屏操作系统
+
+Windows 10
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+内网
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/湖北省仙桃中学.md
+description: 湖北省仙桃中学的班级大屏信息
+---
+# 湖北省仙桃中学
+
+### 学校名称
+
+湖北省仙桃中学
+
+### 地区
+
+湖北省仙桃市
+
+### 学校位置
+
+湖北省仙桃市汉江路66号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+科技楼
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+鸿合
+
+### 班级大屏操作系统
+
+Windows 10 家庭版
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+部分一体机由学生手动升级到 Windows 11，新校区一体机品牌为欧帝，无还原。
+
+---
+
+---
+url: /school/list/烟台开发区实验中学.md
+description: 烟台开发区实验中学的班级大屏信息
+---
+# 烟台开发区实验中学
+
+### 学校名称
+
+烟台开发区实验中学
+
+### 地区
+
+山东省烟台市
+
+### 学校位置
+
+山东省烟台市开发区金沙江路87号
+
+### 学校类型
+
+初级中学
+
+### 信息中心位置
+
+可能在信息楼五楼 *(有待进一步核实)*
+
+### 班级大屏类型
+
+投影仪、一体机
+
+### 班级大屏品牌
+
+东方中原、唯智博、鸿合
+
+### 班级大屏型号
+
+南区大多数为东方中原DI-107IWD-ZH03P 2019款或2022款，有部分ZH03PA 2022款和几台唯智博未知型号机器。北区据了解应该绝大多数是ZH03PA 2024款。
+
+### 班级大屏操作系统
+
+ZH03P出场系统是Windows 7 SP1；ZH03P多为Windows 10专业版 1803；唯智博机器为Windows 10 教育版 22H2
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+南区二号楼三楼、四楼和北区信息教室有几台 鸿合智慧黑板 2023，看起来已经绑定学校集控。
+如果在校学生遇到了任何网络配置问题，请联系信息组万能的吴晓红老师寻求帮助。
+
+---
+
+---
+url: /school/list/苏州市吴中区莫厘实验小学（原东山中心小学）.md
+description: 苏州市吴中区莫厘实验小学（原东山中心小学）的班级大屏信息
+---
+# 苏州市吴中区莫厘实验小学（原东山中心小学）
+
+### 学校名称
+
+苏州市吴中区莫厘实验小学（原东山中心小学）
+
+### 地区
+
+江苏省苏州市
+
+### 学校位置
+
+江苏省苏州市吴中区紫金路45号
+
+### 学校类型
+
+小学
+
+### 信息中心位置
+
+综合楼3楼（需要确认）
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+东方中原（Donview Board）
+
+### 班级大屏操作系统
+
+Windows 7 （需要确认）
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+冰点还原只会还原C盘。
+
+### 备注
+
+（需要确认）指此信息是2024年6月底（暑假放假前）的信息，可能已经过期。
+
+---
+
+---
+url: /school/list/郑州市第四十七高级中学.md
+---
+# 郑州市第四十七高级中学
+
+### 学校名称
+
+郑州市第四十七高级中学
+
+### 地区
+
+河南省郑州市金水区
+
+### 学校位置
+
+郑州市金水区平安大道6号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+智享楼 4楼
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+MT61A-SHB
+
+### 班级大屏操作系统
+
+Windows 10 2004
+
+### 冰点还原
+
+有
+
+### 补充信息
+
+*No response*
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/金华市外国语学校.md
+---
+# 金华市外国语学校
+
+### 学校名称
+
+金华市外国语学校
+
+### 地区
+
+浙江省金华市金东区
+
+### 学校位置
+
+浙江省金华市金东区艾青路1589号
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+*No response*
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+*No response*
+
+### 班级大屏操作系统
+
+Windows 10
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+广泛使用内网 FTP
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/金华市第四中学.md
+---
+# 金华市第四中学
+
+### 学校名称
+
+金华市第四中学
+
+### 地区
+
+浙江省金华市婺城区
+
+### 学校位置
+
+浙江省金华市婺城区临江东路8号
+
+### 学校类型
+
+初级中学
+
+### 信息中心位置
+
+*No response*
+
+### 班级大屏类型
+
+* \[ ] 投影仪
+* \[x] 一体机
+* \[ ] 其他
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+*No response*
+
+### 班级大屏操作系统
+
+Windows 7 (初一 初二), Windows 10 (初三)
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+部分教室一体机安装了 [ExCaller](https://ex-caller.by-ts.top)
+
+### 备注
+
+*No response*
+
+---
+
+---
+url: /school/list/顺德华侨中学.md
+description: 顺德华侨中学的班级大屏信息
+---
+# 顺德华侨中学
+
+### 学校名称
+
+顺德华侨中学
+
+### 地区
+
+广东省佛山市
+
+### 学校位置
+
+广东省佛山市顺德新城区德民路（区政府旁）
+
+### 学校类型
+
+高级中学
+
+### 信息中心位置
+
+实验楼四楼 *(有待进一步核实)*
+
+### 班级大屏类型
+
+一体机
+
+### 班级大屏品牌
+
+希沃
+
+### 班级大屏型号
+
+BD86EA
+
+### 班级大屏操作系统
+
+Windows 10 LTSC
+
+### 冰点还原
+
+无
+
+### 补充信息
+
+高二/高三存在其他型号
